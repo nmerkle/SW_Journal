@@ -1,0 +1,1609 @@
+[
+  {
+    "@id": "http://example.org/Entity/Walk_living_room_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_living_room_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_television_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_television_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_remote_control_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_remote_control_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TurnTo_television_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PointAt_television_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PointAt_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1 AND IsPointAt_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_button_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_button_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1 AND IsPointAt_television_1 == 1 AND IsFind_button_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Push_button_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Push_button_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1 AND IsPointAt_television_1 == 1 AND IsFind_button_1 == 1 AND IsPush_button_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TurnTo_television_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1 AND IsPointAt_television_1 == 1 AND IsFind_button_1 == 1 AND IsPush_button_1 == 1 AND IsTurnTo_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Watch_television_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWatch_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Watch_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1 AND IsPointAt_television_1 == 1 AND IsFind_button_1 == 1 AND IsPush_button_1 == 1 AND IsTurnTo_television_1 == 1 AND IsWatch_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Watch_TV_22",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWatch_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Push_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Watch_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 0 AND IsWalk_television_1 == 0 AND IsFind_television_1 == 0 AND IsFind_remote_control_1 == 0 AND IsTurnTo_television_1 == 0 AND IsPointAt_television_1 == 0 AND IsFind_button_1 == 0 AND IsPush_button_1 == 0 AND IsTurnTo_television_1 == 0 AND IsWatch_television_1 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Watch_TV_22",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWatch_television_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Watch_television_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_living_room_1 == 1 AND IsWalk_television_1 == 1 AND IsFind_television_1 == 1 AND IsFind_remote_control_1 == 1 AND IsTurnTo_television_1 == 1 AND IsPointAt_television_1 == 1 AND IsFind_button_1 == 1 AND IsPush_button_1 == 1 AND IsTurnTo_television_1 == 1 AND IsWatch_television_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_living_room_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_television_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_television_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_remote_control_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsTurnTo_television_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPointAt_television_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_button_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPush_button_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsTurnTo_television_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWatch_television_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWatch_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_living_room_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_television_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_television_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_remote_control_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetTurnTo_television_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPointAt_television_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_button_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPush_button_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWatch_television_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWatch_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_living_room_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_living_room_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_television_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_television_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_remote_control_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_remote_control_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TurnTo_television_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetTurnTo_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PointAt_television_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPointAt_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_button_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Push_button_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPush_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TurnTo_television_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetTurnTo_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Watch_television_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWatch_television_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Watch_TV_22",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Walk_living_room_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_television_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_television_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_remote_control_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/PointAt_television_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Push_button_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Watch_television_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Watch_TV_22"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Watch_TV_22"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Push_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/TurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Watch_television_1"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_living_room_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_remote_control_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPointAt_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPush_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTurnTo_television_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWatch_television_1"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Watch_TV_22"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Walk_living_room_1"
+      },
+      {
+        "@id": "Walk_television_1"
+      },
+      {
+        "@id": "Find_television_1"
+      },
+      {
+        "@id": "Find_remote_control_1"
+      },
+      {
+        "@id": "TurnTo_television_1"
+      },
+      {
+        "@id": "PointAt_television_1"
+      },
+      {
+        "@id": "Find_button_1"
+      },
+      {
+        "@id": "Push_button_1"
+      },
+      {
+        "@id": "TurnTo_television_1"
+      },
+      {
+        "@id": "Watch_television_1"
+      }
+    ]
+  }
+]

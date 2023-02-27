@@ -1,0 +1,734 @@
+[
+  {
+    "@id": "http://example.org/Entity/Walk_home_office_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_home_office_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_home_office_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_computer_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_computer_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_home_office_1 == 1 AND IsWalk_computer_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_computer_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_computer_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_home_office_1 == 1 AND IsWalk_computer_2 == 1 AND IsFind_computer_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_computer_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_home_office_1 == 1 AND IsWalk_computer_2 == 1 AND IsFind_computer_2 == 1 AND IsSwitchOn_computer_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Work_3",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_home_office_1 == 0 AND IsWalk_computer_2 == 0 AND IsFind_computer_2 == 0 AND IsSwitchOn_computer_2 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Work_3",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_home_office_1 == 1 AND IsWalk_computer_2 == 1 AND IsFind_computer_2 == 1 AND IsSwitchOn_computer_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_home_office_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_computer_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_computer_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsSwitchOn_computer_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_home_office_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_computer_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_computer_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetSwitchOn_computer_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_home_office_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_home_office_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_computer_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_computer_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_computer_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetSwitchOn_computer_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Work_3",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Walk_home_office_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_computer_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_computer_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_computer_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Work_3"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Work_3"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_home_office_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_computer_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_computer_2"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Work_3"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Walk_home_office_1"
+      },
+      {
+        "@id": "Walk_computer_2"
+      },
+      {
+        "@id": "Find_computer_2"
+      },
+      {
+        "@id": "SwitchOn_computer_2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+Drink
+Get a glass of water to drink
+
+
+[Walk] <kitchen> (1)
+[Walk] <kitchen_cabinet> (1)
+[Find] <kitchen_cabinet> (1)
+[Find] <kitchen_cabinet> (1)
+[Find] <water> (1)
+[Grab] <water> (1)
+[Find] <water_glass> (1)
+[Pour] <water> (1) <water_glass> (1)
+[Grab] <water_glass> (1)
+[Drink] <water_glass> (1)

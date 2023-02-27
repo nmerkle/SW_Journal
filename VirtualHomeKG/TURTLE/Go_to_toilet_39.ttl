@@ -1,0 +1,1180 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Go_to_toilet_39 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_bathroom_1_Done;
+	property:HasState entity:Walk_toilet_1_Done;
+	property:HasState entity:Find_toilet_1_Done;
+	property:HasState entity:Open_toilet_1_Done;
+	property:HasState entity:Find_clothes_pants_1_Done;
+	property:HasState entity:Find_clothes_pants_1_Done;
+	property:HasState entity:Find_clothes_pants_1_Done;
+	property:HasState entity:PutOff_clothes_pants_1_Done;
+	property:HasState entity:PutOff_clothes_pants_1_Done;
+	property:HasState entity:Sit_toilet_1_Done;
+	property:HasState entity:Find_toilet_paper_1_Done;
+	property:HasState entity:Grab_toilet_paper_1_Done;
+	property:HasState entity:Find_man_1_Done;
+	property:HasState entity:Wipe_man_1_Done;
+	property:HasState entity:PutBack_toilet_paper_1_To_toilet_1_Done;
+	property:HasState entity:StandUp_Done;
+	property:HasState entity:Flush_toilet_1_Done;
+	property:HasState entity:Close_toilet_1_Done;
+	property:HasState entity:Find_clothes_underwear_1_Done;
+	property:HasState entity:PutOn_clothes_underwear_1_Done;
+	property:HasState entity:PutOn_clothes_pants_1_Done;
+	property:HasState entity:Find_faucet_1_Done;
+	property:HasState entity:SwitchOn_faucet_1_Done;
+	property:HasState entity:Find_soap_1_Done;
+	property:HasState entity:Grab_soap_1_Done;
+	property:HasState entity:Find_hands_both_1_Done;
+	property:HasState entity:Wash_hands_both_1_Done;
+	property:HasState entity:PutObjBack_soap_1_Done;
+	property:HasState entity:SwitchOff_faucet_1_Done;
+	property:HasState entity:InitialState_Go_to_toilet_39;
+	property:HasState entity:FinalState_Go_to_toilet_39;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1;
+	property:HasObservationFeature entity:IsSwitchOff_faucet_1;
+	property:HasAction entity:Walk_bathroom_1;
+	property:HasAction entity:Walk_toilet_1;
+	property:HasAction entity:Find_toilet_1;
+	property:HasAction entity:Open_toilet_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:PutOff_clothes_pants_1;
+	property:HasAction entity:PutOff_clothes_pants_1;
+	property:HasAction entity:Sit_toilet_1;
+	property:HasAction entity:Find_toilet_paper_1;
+	property:HasAction entity:Grab_toilet_paper_1;
+	property:HasAction entity:Find_man_1;
+	property:HasAction entity:Wipe_man_1;
+	property:HasAction entity:PutBack_toilet_paper_1_To_toilet_1;
+	property:HasAction entity:StandUp;
+	property:HasAction entity:Flush_toilet_1;
+	property:HasAction entity:Close_toilet_1;
+	property:HasAction entity:Find_clothes_underwear_1;
+	property:HasAction entity:PutOn_clothes_underwear_1;
+	property:HasAction entity:PutOn_clothes_pants_1;
+	property:HasAction entity:Find_faucet_1;
+	property:HasAction entity:SwitchOn_faucet_1;
+	property:HasAction entity:Find_soap_1;
+	property:HasAction entity:Grab_soap_1;
+	property:HasAction entity:Find_hands_both_1;
+	property:HasAction entity:Wash_hands_both_1;
+	property:HasAction entity:PutObjBack_soap_1;
+	property:HasAction entity:SwitchOff_faucet_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_bathroom_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasAction entity:Walk_bathroom_1 .
+entity:Walk_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasAction entity:Walk_toilet_1 .
+entity:Find_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasAction entity:Find_toilet_1 .
+entity:Open_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasAction entity:Open_toilet_1 .
+entity:Find_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1 .
+entity:Find_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1 .
+entity:Find_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1 .
+entity:PutOff_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasAction entity:PutOff_clothes_pants_1 .
+entity:PutOff_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasAction entity:PutOff_clothes_pants_1 .
+entity:Sit_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasAction entity:Sit_toilet_1 .
+entity:Find_toilet_paper_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasAction entity:Find_toilet_paper_1 .
+entity:Grab_toilet_paper_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasAction entity:Grab_toilet_paper_1 .
+entity:Find_man_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasAction entity:Find_man_1 .
+entity:Wipe_man_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasAction entity:Wipe_man_1 .
+entity:PutBack_toilet_paper_1_To_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasAction entity:PutBack_toilet_paper_1_To_toilet_1 .
+entity:StandUp_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasAction entity:StandUp .
+entity:Flush_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasAction entity:Flush_toilet_1 .
+entity:Close_toilet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasAction entity:Close_toilet_1 .
+entity:Find_clothes_underwear_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasAction entity:Find_clothes_underwear_1 .
+entity:PutOn_clothes_underwear_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasAction entity:PutOn_clothes_underwear_1 .
+entity:PutOn_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasAction entity:PutOn_clothes_pants_1 .
+entity:Find_faucet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasAction entity:Find_faucet_1 .
+entity:SwitchOn_faucet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasAction entity:SwitchOn_faucet_1 .
+entity:Find_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasAction entity:Find_soap_1 .
+entity:Grab_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasAction entity:Grab_soap_1 .
+entity:Find_hands_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasAction entity:Find_hands_both_1 .
+entity:Wash_hands_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsWash_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasAction entity:Wash_hands_both_1 .
+entity:PutObjBack_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsWash_hands_both_1 == 1 AND IsPutObjBack_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1;
+	property:HasAction entity:PutObjBack_soap_1 .
+entity:SwitchOff_faucet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsWash_hands_both_1 == 1 AND IsPutObjBack_soap_1 == 1 AND IsSwitchOff_faucet_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1;
+	property:HasObservationFeature entity:IsSwitchOff_faucet_1;
+	property:HasAction entity:SwitchOff_faucet_1 .
+entity:InitialState_Go_to_toilet_39 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 0 AND IsWalk_toilet_1 == 0 AND IsFind_toilet_1 == 0 AND IsOpen_toilet_1 == 0 AND IsFind_clothes_pants_1 == 0 AND IsFind_clothes_pants_1 == 0 AND IsFind_clothes_pants_1 == 0 AND IsPutOff_clothes_pants_1 == 0 AND IsPutOff_clothes_pants_1 == 0 AND IsSit_toilet_1 == 0 AND IsFind_toilet_paper_1 == 0 AND IsGrab_toilet_paper_1 == 0 AND IsFind_man_1 == 0 AND IsWipe_man_1 == 0 AND IsPutBack_toilet_paper_1_To_toilet_1 == 0 AND IsStandUp == 0 AND IsFlush_toilet_1 == 0 AND IsClose_toilet_1 == 0 AND IsFind_clothes_underwear_1 == 0 AND IsPutOn_clothes_underwear_1 == 0 AND IsPutOn_clothes_pants_1 == 0 AND IsFind_faucet_1 == 0 AND IsSwitchOn_faucet_1 == 0 AND IsFind_soap_1 == 0 AND IsGrab_soap_1 == 0 AND IsFind_hands_both_1 == 0 AND IsWash_hands_both_1 == 0 AND IsPutObjBack_soap_1 == 0 AND IsSwitchOff_faucet_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1;
+	property:HasObservationFeature entity:IsSwitchOff_faucet_1;
+	property:HasAction entity:Walk_bathroom_1;
+	property:HasAction entity:Walk_toilet_1;
+	property:HasAction entity:Find_toilet_1;
+	property:HasAction entity:Open_toilet_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:PutOff_clothes_pants_1;
+	property:HasAction entity:PutOff_clothes_pants_1;
+	property:HasAction entity:Sit_toilet_1;
+	property:HasAction entity:Find_toilet_paper_1;
+	property:HasAction entity:Grab_toilet_paper_1;
+	property:HasAction entity:Find_man_1;
+	property:HasAction entity:Wipe_man_1;
+	property:HasAction entity:PutBack_toilet_paper_1_To_toilet_1;
+	property:HasAction entity:StandUp;
+	property:HasAction entity:Flush_toilet_1;
+	property:HasAction entity:Close_toilet_1;
+	property:HasAction entity:Find_clothes_underwear_1;
+	property:HasAction entity:PutOn_clothes_underwear_1;
+	property:HasAction entity:PutOn_clothes_pants_1;
+	property:HasAction entity:Find_faucet_1;
+	property:HasAction entity:SwitchOn_faucet_1;
+	property:HasAction entity:Find_soap_1;
+	property:HasAction entity:Grab_soap_1;
+	property:HasAction entity:Find_hands_both_1;
+	property:HasAction entity:Wash_hands_both_1;
+	property:HasAction entity:PutObjBack_soap_1;
+	property:HasAction entity:SwitchOff_faucet_1 .
+entity:FinalState_Go_to_toilet_39 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_toilet_1 == 1 AND IsFind_toilet_1 == 1 AND IsOpen_toilet_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsPutOff_clothes_pants_1 == 1 AND IsSit_toilet_1 == 1 AND IsFind_toilet_paper_1 == 1 AND IsGrab_toilet_paper_1 == 1 AND IsFind_man_1 == 1 AND IsWipe_man_1 == 1 AND IsPutBack_toilet_paper_1_To_toilet_1 == 1 AND IsStandUp == 1 AND IsFlush_toilet_1 == 1 AND IsClose_toilet_1 == 1 AND IsFind_clothes_underwear_1 == 1 AND IsPutOn_clothes_underwear_1 == 1 AND IsPutOn_clothes_pants_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsWash_hands_both_1 == 1 AND IsPutObjBack_soap_1 == 1 AND IsSwitchOff_faucet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1;
+	property:HasObservationFeature entity:IsSwitchOff_faucet_1;
+	property:HasAction entity:SwitchOff_faucet_1 .
+entity:IsWalk_bathroom_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsOpen_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutOff_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutOff_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSit_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_toilet_paper_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_toilet_paper_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_man_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWipe_man_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_toilet_paper_1_To_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsStandUp a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFlush_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsClose_toilet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_underwear_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutOn_clothes_underwear_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutOn_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_faucet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_faucet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_hands_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWash_hands_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutObjBack_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOff_faucet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_1;
+	property:HasObservationFeature entity:IsOpen_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1;
+	property:HasObservationFeature entity:IsSit_toilet_1;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1;
+	property:HasObservationFeature entity:IsFind_man_1;
+	property:HasObservationFeature entity:IsWipe_man_1;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFlush_toilet_1;
+	property:HasObservationFeature entity:IsClose_toilet_1;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1;
+	property:HasObservationFeature entity:IsSwitchOff_faucet_1 .
+entity:SetWalk_bathroom_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathroom_1 .
+entity:SetWalk_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_toilet_1 .
+entity:SetFind_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_toilet_1 .
+entity:SetOpen_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsOpen_toilet_1 .
+entity:SetFind_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1 .
+entity:SetPutOff_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutOff_clothes_pants_1 .
+entity:SetSit_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSit_toilet_1 .
+entity:SetFind_toilet_paper_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_toilet_paper_1 .
+entity:SetGrab_toilet_paper_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_toilet_paper_1 .
+entity:SetFind_man_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_man_1 .
+entity:SetWipe_man_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWipe_man_1 .
+entity:SetPutBack_toilet_paper_1_To_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_toilet_paper_1_To_toilet_1 .
+entity:SetStandUp a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsStandUp .
+entity:SetFlush_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFlush_toilet_1 .
+entity:SetClose_toilet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsClose_toilet_1 .
+entity:SetFind_clothes_underwear_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_clothes_underwear_1 .
+entity:SetPutOn_clothes_underwear_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutOn_clothes_underwear_1 .
+entity:SetPutOn_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutOn_clothes_pants_1 .
+entity:SetFind_faucet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_faucet_1 .
+entity:SetSwitchOn_faucet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1 .
+entity:SetFind_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_soap_1 .
+entity:SetGrab_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_soap_1 .
+entity:SetFind_hands_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_hands_both_1 .
+entity:SetWash_hands_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWash_hands_both_1 .
+entity:SetPutObjBack_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutObjBack_soap_1 .
+entity:SetSwitchOff_faucet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOff_faucet_1 .
+entity:Walk_bathroom_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bathroom_1 .
+entity:Walk_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_toilet_1 .
+entity:Find_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_toilet_1 .
+entity:Open_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetOpen_toilet_1 .
+entity:Find_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_pants_1 .
+entity:Find_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_pants_1 .
+entity:Find_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_pants_1 .
+entity:PutOff_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutOff_clothes_pants_1 .
+entity:PutOff_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutOff_clothes_pants_1 .
+entity:Sit_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSit_toilet_1 .
+entity:Find_toilet_paper_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_toilet_paper_1 .
+entity:Grab_toilet_paper_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_toilet_paper_1 .
+entity:Find_man_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_man_1 .
+entity:Wipe_man_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWipe_man_1 .
+entity:PutBack_toilet_paper_1_To_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_toilet_paper_1_To_toilet_1 .
+entity:StandUp a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetStandUp .
+entity:Flush_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFlush_toilet_1 .
+entity:Close_toilet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetClose_toilet_1 .
+entity:Find_clothes_underwear_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_underwear_1 .
+entity:PutOn_clothes_underwear_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutOn_clothes_underwear_1 .
+entity:PutOn_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutOn_clothes_pants_1 .
+entity:Find_faucet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_faucet_1 .
+entity:SwitchOn_faucet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_faucet_1 .
+entity:Find_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_soap_1 .
+entity:Grab_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_soap_1 .
+entity:Find_hands_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_hands_both_1 .
+entity:Wash_hands_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWash_hands_both_1 .
+entity:PutObjBack_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutObjBack_soap_1 .
+entity:SwitchOff_faucet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOff_faucet_1 .

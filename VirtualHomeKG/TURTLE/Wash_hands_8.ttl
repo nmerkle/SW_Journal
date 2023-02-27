@@ -1,0 +1,265 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Wash_hands_8 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_bathroom_1_Done;
+	property:HasState entity:Walk_soap_1_Done;
+	property:HasState entity:Find_soap_1_Done;
+	property:HasState entity:Grab_soap_1_Done;
+	property:HasState entity:Find_hands_both_1_Done;
+	property:HasState entity:Scrub_hands_both_1_Done;
+	property:HasState entity:Wash_hands_both_1_Done;
+	property:HasState entity:Rinse_hands_both_1_Done;
+	property:HasState entity:InitialState_Wash_hands_8;
+	property:HasState entity:FinalState_Wash_hands_8;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsRinse_hands_both_1;
+	property:HasAction entity:Walk_bathroom_1;
+	property:HasAction entity:Walk_soap_1;
+	property:HasAction entity:Find_soap_1;
+	property:HasAction entity:Grab_soap_1;
+	property:HasAction entity:Find_hands_both_1;
+	property:HasAction entity:Scrub_hands_both_1;
+	property:HasAction entity:Wash_hands_both_1;
+	property:HasAction entity:Rinse_hands_both_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_bathroom_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasAction entity:Walk_bathroom_1 .
+entity:Walk_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasAction entity:Walk_soap_1 .
+entity:Find_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasAction entity:Find_soap_1 .
+entity:Grab_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasAction entity:Grab_soap_1 .
+entity:Find_hands_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasAction entity:Find_hands_both_1 .
+entity:Scrub_hands_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsScrub_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasAction entity:Scrub_hands_both_1 .
+entity:Wash_hands_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsScrub_hands_both_1 == 1 AND IsWash_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasAction entity:Wash_hands_both_1 .
+entity:Rinse_hands_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsScrub_hands_both_1 == 1 AND IsWash_hands_both_1 == 1 AND IsRinse_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsRinse_hands_both_1;
+	property:HasAction entity:Rinse_hands_both_1 .
+entity:InitialState_Wash_hands_8 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 0 AND IsWalk_soap_1 == 0 AND IsFind_soap_1 == 0 AND IsGrab_soap_1 == 0 AND IsFind_hands_both_1 == 0 AND IsScrub_hands_both_1 == 0 AND IsWash_hands_both_1 == 0 AND IsRinse_hands_both_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsRinse_hands_both_1;
+	property:HasAction entity:Walk_bathroom_1;
+	property:HasAction entity:Walk_soap_1;
+	property:HasAction entity:Find_soap_1;
+	property:HasAction entity:Grab_soap_1;
+	property:HasAction entity:Find_hands_both_1;
+	property:HasAction entity:Scrub_hands_both_1;
+	property:HasAction entity:Wash_hands_both_1;
+	property:HasAction entity:Rinse_hands_both_1 .
+entity:FinalState_Wash_hands_8 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_soap_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_hands_both_1 == 1 AND IsScrub_hands_both_1 == 1 AND IsWash_hands_both_1 == 1 AND IsRinse_hands_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsRinse_hands_both_1;
+	property:HasAction entity:Rinse_hands_both_1 .
+entity:IsWalk_bathroom_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_hands_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsScrub_hands_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWash_hands_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_hands_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_soap_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_hands_both_1;
+	property:HasObservationFeature entity:IsScrub_hands_both_1;
+	property:HasObservationFeature entity:IsWash_hands_both_1;
+	property:HasObservationFeature entity:IsRinse_hands_both_1 .
+entity:SetWalk_bathroom_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathroom_1 .
+entity:SetWalk_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_soap_1 .
+entity:SetFind_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_soap_1 .
+entity:SetGrab_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_soap_1 .
+entity:SetFind_hands_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_hands_both_1 .
+entity:SetScrub_hands_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsScrub_hands_both_1 .
+entity:SetWash_hands_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWash_hands_both_1 .
+entity:SetRinse_hands_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_hands_both_1 .
+entity:Walk_bathroom_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bathroom_1 .
+entity:Walk_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_soap_1 .
+entity:Find_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_soap_1 .
+entity:Grab_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_soap_1 .
+entity:Find_hands_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_hands_both_1 .
+entity:Scrub_hands_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetScrub_hands_both_1 .
+entity:Wash_hands_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWash_hands_both_1 .
+entity:Rinse_hands_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_hands_both_1 .

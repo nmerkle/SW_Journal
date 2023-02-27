@@ -1,0 +1,739 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Wash_dishes_with_dishwasher_15 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_dishwasher_1_Done;
+	property:HasState entity:Find_dishrack_1_Done;
+	property:HasState entity:Pull_dishrack_1_Done;
+	property:HasState entity:Find_cup_5_Done;
+	property:HasState entity:Find_cup_1_Done;
+	property:HasState entity:Grab_cup_1_Done;
+	property:HasState entity:PutBack_cup_1_To_dishrack_1_Done;
+	property:HasState entity:Find_cup_2_Done;
+	property:HasState entity:Grab_cup_2_Done;
+	property:HasState entity:Grab_cup_5_Done;
+	property:HasState entity:PutBack_cup_2_To_dishrack_1_Done;
+	property:HasState entity:Find_cup_3_Done;
+	property:HasState entity:Grab_cup_3_Done;
+	property:HasState entity:PutBack_cup_3_To_dishrack_1_Done;
+	property:HasState entity:PutBack_cup_5_To_dishrack_1_Done;
+	property:HasState entity:Push_dishrack_1_Done;
+	property:HasState entity:Find_dish_soap_1_Done;
+	property:HasState entity:Grab_dish_soap_1_Done;
+	property:HasState entity:PutBack_dish_soap_1_To_dishrack_1_Done;
+	property:HasState entity:SwitchOn_dishwasher_1_Done;
+	property:HasState entity:InitialState_Wash_dishes_with_dishwasher_15;
+	property:HasState entity:FinalState_Wash_dishes_with_dishwasher_15;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:Find_dishwasher_1;
+	property:HasAction entity:Find_dishrack_1;
+	property:HasAction entity:Pull_dishrack_1;
+	property:HasAction entity:Find_cup_5;
+	property:HasAction entity:Find_cup_1;
+	property:HasAction entity:Grab_cup_1;
+	property:HasAction entity:PutBack_cup_1_To_dishrack_1;
+	property:HasAction entity:Find_cup_2;
+	property:HasAction entity:Grab_cup_2;
+	property:HasAction entity:Grab_cup_5;
+	property:HasAction entity:PutBack_cup_2_To_dishrack_1;
+	property:HasAction entity:Find_cup_3;
+	property:HasAction entity:Grab_cup_3;
+	property:HasAction entity:PutBack_cup_3_To_dishrack_1;
+	property:HasAction entity:PutBack_cup_5_To_dishrack_1;
+	property:HasAction entity:Push_dishrack_1;
+	property:HasAction entity:Find_dish_soap_1;
+	property:HasAction entity:Grab_dish_soap_1;
+	property:HasAction entity:PutBack_dish_soap_1_To_dishrack_1;
+	property:HasAction entity:SwitchOn_dishwasher_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasAction entity:Find_dishwasher_1 .
+entity:Find_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasAction entity:Find_dishrack_1 .
+entity:Pull_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasAction entity:Pull_dishrack_1 .
+entity:Find_cup_5_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasAction entity:Find_cup_5 .
+entity:Find_cup_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasAction entity:Find_cup_1 .
+entity:Grab_cup_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasAction entity:Grab_cup_1 .
+entity:PutBack_cup_1_To_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasAction entity:PutBack_cup_1_To_dishrack_1 .
+entity:Find_cup_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasAction entity:Find_cup_2 .
+entity:Grab_cup_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasAction entity:Grab_cup_2 .
+entity:Grab_cup_5_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasAction entity:Grab_cup_5 .
+entity:PutBack_cup_2_To_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasAction entity:PutBack_cup_2_To_dishrack_1 .
+entity:Find_cup_3_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasAction entity:Find_cup_3 .
+entity:Grab_cup_3_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasAction entity:Grab_cup_3 .
+entity:PutBack_cup_3_To_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasAction entity:PutBack_cup_3_To_dishrack_1 .
+entity:PutBack_cup_5_To_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasAction entity:PutBack_cup_5_To_dishrack_1 .
+entity:Push_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1 AND IsPush_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasAction entity:Push_dishrack_1 .
+entity:Find_dish_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1 AND IsPush_dishrack_1 == 1 AND IsFind_dish_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasAction entity:Find_dish_soap_1 .
+entity:Grab_dish_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1 AND IsPush_dishrack_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsGrab_dish_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasAction entity:Grab_dish_soap_1 .
+entity:PutBack_dish_soap_1_To_dishrack_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1 AND IsPush_dishrack_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsGrab_dish_soap_1 == 1 AND IsPutBack_dish_soap_1_To_dishrack_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1;
+	property:HasAction entity:PutBack_dish_soap_1_To_dishrack_1 .
+entity:SwitchOn_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1 AND IsPush_dishrack_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsGrab_dish_soap_1 == 1 AND IsPutBack_dish_soap_1_To_dishrack_1 == 1 AND IsSwitchOn_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:SwitchOn_dishwasher_1 .
+entity:InitialState_Wash_dishes_with_dishwasher_15 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 0 AND IsFind_dishrack_1 == 0 AND IsPull_dishrack_1 == 0 AND IsFind_cup_5 == 0 AND IsFind_cup_1 == 0 AND IsGrab_cup_1 == 0 AND IsPutBack_cup_1_To_dishrack_1 == 0 AND IsFind_cup_2 == 0 AND IsGrab_cup_2 == 0 AND IsGrab_cup_5 == 0 AND IsPutBack_cup_2_To_dishrack_1 == 0 AND IsFind_cup_3 == 0 AND IsGrab_cup_3 == 0 AND IsPutBack_cup_3_To_dishrack_1 == 0 AND IsPutBack_cup_5_To_dishrack_1 == 0 AND IsPush_dishrack_1 == 0 AND IsFind_dish_soap_1 == 0 AND IsGrab_dish_soap_1 == 0 AND IsPutBack_dish_soap_1_To_dishrack_1 == 0 AND IsSwitchOn_dishwasher_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:Find_dishwasher_1;
+	property:HasAction entity:Find_dishrack_1;
+	property:HasAction entity:Pull_dishrack_1;
+	property:HasAction entity:Find_cup_5;
+	property:HasAction entity:Find_cup_1;
+	property:HasAction entity:Grab_cup_1;
+	property:HasAction entity:PutBack_cup_1_To_dishrack_1;
+	property:HasAction entity:Find_cup_2;
+	property:HasAction entity:Grab_cup_2;
+	property:HasAction entity:Grab_cup_5;
+	property:HasAction entity:PutBack_cup_2_To_dishrack_1;
+	property:HasAction entity:Find_cup_3;
+	property:HasAction entity:Grab_cup_3;
+	property:HasAction entity:PutBack_cup_3_To_dishrack_1;
+	property:HasAction entity:PutBack_cup_5_To_dishrack_1;
+	property:HasAction entity:Push_dishrack_1;
+	property:HasAction entity:Find_dish_soap_1;
+	property:HasAction entity:Grab_dish_soap_1;
+	property:HasAction entity:PutBack_dish_soap_1_To_dishrack_1;
+	property:HasAction entity:SwitchOn_dishwasher_1 .
+entity:FinalState_Wash_dishes_with_dishwasher_15 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_dishwasher_1 == 1 AND IsFind_dishrack_1 == 1 AND IsPull_dishrack_1 == 1 AND IsFind_cup_5 == 1 AND IsFind_cup_1 == 1 AND IsGrab_cup_1 == 1 AND IsPutBack_cup_1_To_dishrack_1 == 1 AND IsFind_cup_2 == 1 AND IsGrab_cup_2 == 1 AND IsGrab_cup_5 == 1 AND IsPutBack_cup_2_To_dishrack_1 == 1 AND IsFind_cup_3 == 1 AND IsGrab_cup_3 == 1 AND IsPutBack_cup_3_To_dishrack_1 == 1 AND IsPutBack_cup_5_To_dishrack_1 == 1 AND IsPush_dishrack_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsGrab_dish_soap_1 == 1 AND IsPutBack_dish_soap_1_To_dishrack_1 == 1 AND IsSwitchOn_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:SwitchOn_dishwasher_1 .
+entity:IsFind_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPull_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_cup_5 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_cup_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_cup_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_cup_1_To_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_cup_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_cup_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_cup_5 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_cup_2_To_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_cup_3 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_cup_3 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_cup_3_To_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_cup_5_To_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPush_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_dish_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_dish_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_dish_soap_1_To_dishrack_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_dishrack_1;
+	property:HasObservationFeature entity:IsPull_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_5;
+	property:HasObservationFeature entity:IsFind_cup_1;
+	property:HasObservationFeature entity:IsGrab_cup_1;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_2;
+	property:HasObservationFeature entity:IsGrab_cup_5;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1;
+	property:HasObservationFeature entity:IsFind_cup_3;
+	property:HasObservationFeature entity:IsGrab_cup_3;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1;
+	property:HasObservationFeature entity:IsPush_dishrack_1;
+	property:HasObservationFeature entity:IsFind_dish_soap_1;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1 .
+entity:SetFind_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_dishwasher_1 .
+entity:SetFind_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_dishrack_1 .
+entity:SetPull_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPull_dishrack_1 .
+entity:SetFind_cup_5 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_cup_5 .
+entity:SetFind_cup_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_cup_1 .
+entity:SetGrab_cup_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_cup_1 .
+entity:SetPutBack_cup_1_To_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_cup_1_To_dishrack_1 .
+entity:SetFind_cup_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_cup_2 .
+entity:SetGrab_cup_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_cup_2 .
+entity:SetGrab_cup_5 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_cup_5 .
+entity:SetPutBack_cup_2_To_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_cup_2_To_dishrack_1 .
+entity:SetFind_cup_3 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_cup_3 .
+entity:SetGrab_cup_3 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_cup_3 .
+entity:SetPutBack_cup_3_To_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_cup_3_To_dishrack_1 .
+entity:SetPutBack_cup_5_To_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_cup_5_To_dishrack_1 .
+entity:SetPush_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPush_dishrack_1 .
+entity:SetFind_dish_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_dish_soap_1 .
+entity:SetGrab_dish_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_dish_soap_1 .
+entity:SetPutBack_dish_soap_1_To_dishrack_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_dish_soap_1_To_dishrack_1 .
+entity:SetSwitchOn_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1 .
+entity:Find_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_dishwasher_1 .
+entity:Find_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_dishrack_1 .
+entity:Pull_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPull_dishrack_1 .
+entity:Find_cup_5 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_cup_5 .
+entity:Find_cup_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_cup_1 .
+entity:Grab_cup_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_cup_1 .
+entity:PutBack_cup_1_To_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_cup_1_To_dishrack_1 .
+entity:Find_cup_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_cup_2 .
+entity:Grab_cup_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_cup_2 .
+entity:Grab_cup_5 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_cup_5 .
+entity:PutBack_cup_2_To_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_cup_2_To_dishrack_1 .
+entity:Find_cup_3 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_cup_3 .
+entity:Grab_cup_3 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_cup_3 .
+entity:PutBack_cup_3_To_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_cup_3_To_dishrack_1 .
+entity:PutBack_cup_5_To_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_cup_5_To_dishrack_1 .
+entity:Push_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPush_dishrack_1 .
+entity:Find_dish_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_dish_soap_1 .
+entity:Grab_dish_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_dish_soap_1 .
+entity:PutBack_dish_soap_1_To_dishrack_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_dish_soap_1_To_dishrack_1 .
+entity:SwitchOn_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_dishwasher_1 .

@@ -1,0 +1,4124 @@
+[
+  {
+    "@id": "http://example.org/Entity/Walk_kitchen_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_pantry_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_pantry_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_pantry_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_pantry_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_bread_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_bread_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_fridge_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_fridge_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_cheese_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_cheese_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_kitchen_cabinet_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_cabinet_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_fryingpan_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_fryingpan_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_stove_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_stove_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_stove_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOn_stove_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_bread_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_bread_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Drop_food_bread_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Drop_food_bread_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_cheese_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_cheese_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Drop_food_cheese_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Drop_food_cheese_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_fryingpan_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_fryingpan_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_food_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_food_food_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_food_food_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_food_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_food_food_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_food_food_1 == 1 AND IsGrab_food_food_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_food_food_1 == 1 AND IsGrab_food_food_1 == 1 AND IsPutBack_food_food_1_To_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Cook_some_food_25",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Drop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Drop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 0 AND IsWalk_pantry_1 == 0 AND IsFind_pantry_1 == 0 AND IsFind_food_bread_1 == 0 AND IsGrab_food_bread_1 == 0 AND IsWalk_fridge_1 == 0 AND IsFind_food_cheese_1 == 0 AND IsGrab_food_cheese_1 == 0 AND IsWalk_kitchen_cabinet_1 == 0 AND IsFind_fryingpan_1 == 0 AND IsFind_stove_1 == 0 AND IsSwitchOn_stove_1 == 0 AND IsFind_food_bread_2 == 0 AND IsGrab_food_bread_2 == 0 AND IsDrop_food_bread_2 == 0 AND IsFind_food_cheese_2 == 0 AND IsGrab_food_cheese_2 == 0 AND IsDrop_food_cheese_2 == 0 AND IsGrab_fryingpan_1 == 0 AND IsFind_plate_1 == 0 AND IsGrab_plate_1 == 0 AND IsFind_food_food_1 == 0 AND IsGrab_food_food_1 == 0 AND IsPutBack_food_food_1_To_plate_1 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Cook_some_food_25",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_pantry_1 == 1 AND IsFind_pantry_1 == 1 AND IsFind_food_bread_1 == 1 AND IsGrab_food_bread_1 == 1 AND IsWalk_fridge_1 == 1 AND IsFind_food_cheese_1 == 1 AND IsGrab_food_cheese_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_bread_2 == 1 AND IsGrab_food_bread_2 == 1 AND IsDrop_food_bread_2 == 1 AND IsFind_food_cheese_2 == 1 AND IsGrab_food_cheese_2 == 1 AND IsDrop_food_cheese_2 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_food_food_1 == 1 AND IsGrab_food_food_1 == 1 AND IsPutBack_food_food_1_To_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_kitchen_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_pantry_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_pantry_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_food_bread_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_food_bread_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_fridge_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_food_cheese_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_food_cheese_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_fryingpan_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_stove_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsSwitchOn_stove_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsDrop_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsDrop_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_fryingpan_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_food_food_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_food_food_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_kitchen_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_pantry_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_pantry_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_food_bread_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_food_bread_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_fridge_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_food_cheese_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_food_cheese_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_kitchen_cabinet_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_fryingpan_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_stove_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetSwitchOn_stove_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetDrop_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetDrop_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_fryingpan_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_food_food_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_food_food_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPutBack_food_food_1_To_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_kitchen_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_kitchen_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_pantry_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_pantry_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_pantry_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_pantry_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_bread_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_food_bread_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_bread_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_food_bread_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_fridge_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_fridge_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_cheese_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_food_cheese_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_cheese_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_food_cheese_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_kitchen_cabinet_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_kitchen_cabinet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_fryingpan_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_fryingpan_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_stove_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_stove_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_stove_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetSwitchOn_stove_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_food_bread_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_food_bread_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Drop_food_bread_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetDrop_food_bread_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_food_cheese_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_food_cheese_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Drop_food_cheese_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetDrop_food_cheese_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_fryingpan_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_fryingpan_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_food_food_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_food_food_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_food_food_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_food_food_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPutBack_food_food_1_To_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Cook_some_food_25",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_pantry_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_pantry_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_fridge_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_cabinet_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_fryingpan_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_stove_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_stove_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Drop_food_bread_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Drop_food_cheese_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_fryingpan_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_food_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_food_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Cook_some_food_25"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Cook_some_food_25"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Drop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Drop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_pantry_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_fridge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_stove_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_bread_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsDrop_food_cheese_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_fryingpan_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_food_food_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_food_food_1_To_plate_1"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Cook_some_food_25"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Walk_kitchen_1"
+      },
+      {
+        "@id": "Walk_pantry_1"
+      },
+      {
+        "@id": "Find_pantry_1"
+      },
+      {
+        "@id": "Find_food_bread_1"
+      },
+      {
+        "@id": "Grab_food_bread_1"
+      },
+      {
+        "@id": "Walk_fridge_1"
+      },
+      {
+        "@id": "Find_food_cheese_1"
+      },
+      {
+        "@id": "Grab_food_cheese_1"
+      },
+      {
+        "@id": "Walk_kitchen_cabinet_1"
+      },
+      {
+        "@id": "Find_fryingpan_1"
+      },
+      {
+        "@id": "Find_stove_1"
+      },
+      {
+        "@id": "SwitchOn_stove_1"
+      },
+      {
+        "@id": "Find_food_bread_2"
+      },
+      {
+        "@id": "Grab_food_bread_2"
+      },
+      {
+        "@id": "Drop_food_bread_2"
+      },
+      {
+        "@id": "Find_food_cheese_2"
+      },
+      {
+        "@id": "Grab_food_cheese_2"
+      },
+      {
+        "@id": "Drop_food_cheese_2"
+      },
+      {
+        "@id": "Grab_fryingpan_1"
+      },
+      {
+        "@id": "Find_plate_1"
+      },
+      {
+        "@id": "Grab_plate_1"
+      },
+      {
+        "@id": "Find_food_food_1"
+      },
+      {
+        "@id": "Grab_food_food_1"
+      },
+      {
+        "@id": "PutBack_food_food_1_To_plate_1"
+      }
+    ]
+  }
+]

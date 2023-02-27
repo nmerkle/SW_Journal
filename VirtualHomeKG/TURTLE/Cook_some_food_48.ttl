@@ -1,0 +1,562 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Cook_some_food_48 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_kitchen_1_Done;
+	property:HasState entity:Walk_kitchen_cabinet_1_Done;
+	property:HasState entity:Find_kitchen_cabinet_1_Done;
+	property:HasState entity:Open_kitchen_cabinet_1_Done;
+	property:HasState entity:Find_pasta_1_Done;
+	property:HasState entity:Grab_pasta_1_Done;
+	property:HasState entity:Find_water_1_Done;
+	property:HasState entity:Grab_water_1_Done;
+	property:HasState entity:Find_sauce_pan_1_Done;
+	property:HasState entity:Pour_water_1_To_sauce_pan_1_Done;
+	property:HasState entity:Find_stove_1_Done;
+	property:HasState entity:SwitchOn_stove_1_Done;
+	property:HasState entity:PutBack_pasta_1_To_sauce_pan_1_Done;
+	property:HasState entity:Find_sauce_pan_1_Done;
+	property:HasState entity:Grab_sauce_pan_1_Done;
+	property:HasState entity:PutBack_sauce_pan_1_To_stove_1_Done;
+	property:HasState entity:InitialState_Cook_some_food_48;
+	property:HasState entity:FinalState_Cook_some_food_48;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1;
+	property:HasObservationFeature entity:IsPutBack_sauce_pan_1_To_stove_1;
+	property:HasAction entity:Walk_kitchen_1;
+	property:HasAction entity:Walk_kitchen_cabinet_1;
+	property:HasAction entity:Find_kitchen_cabinet_1;
+	property:HasAction entity:Open_kitchen_cabinet_1;
+	property:HasAction entity:Find_pasta_1;
+	property:HasAction entity:Grab_pasta_1;
+	property:HasAction entity:Find_water_1;
+	property:HasAction entity:Grab_water_1;
+	property:HasAction entity:Find_sauce_pan_1;
+	property:HasAction entity:Pour_water_1_To_sauce_pan_1;
+	property:HasAction entity:Find_stove_1;
+	property:HasAction entity:SwitchOn_stove_1;
+	property:HasAction entity:PutBack_pasta_1_To_sauce_pan_1;
+	property:HasAction entity:Find_sauce_pan_1;
+	property:HasAction entity:Grab_sauce_pan_1;
+	property:HasAction entity:PutBack_sauce_pan_1_To_stove_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_kitchen_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasAction entity:Walk_kitchen_1 .
+entity:Walk_kitchen_cabinet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasAction entity:Walk_kitchen_cabinet_1 .
+entity:Find_kitchen_cabinet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasAction entity:Find_kitchen_cabinet_1 .
+entity:Open_kitchen_cabinet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasAction entity:Open_kitchen_cabinet_1 .
+entity:Find_pasta_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasAction entity:Find_pasta_1 .
+entity:Grab_pasta_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasAction entity:Grab_pasta_1 .
+entity:Find_water_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasAction entity:Find_water_1 .
+entity:Grab_water_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasAction entity:Grab_water_1 .
+entity:Find_sauce_pan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasAction entity:Find_sauce_pan_1 .
+entity:Pour_water_1_To_sauce_pan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasAction entity:Pour_water_1_To_sauce_pan_1 .
+entity:Find_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasAction entity:Find_stove_1 .
+entity:SwitchOn_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasAction entity:SwitchOn_stove_1 .
+entity:PutBack_pasta_1_To_sauce_pan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsPutBack_pasta_1_To_sauce_pan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasAction entity:PutBack_pasta_1_To_sauce_pan_1 .
+entity:Find_sauce_pan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsPutBack_pasta_1_To_sauce_pan_1 == 1 AND IsFind_sauce_pan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasAction entity:Find_sauce_pan_1 .
+entity:Grab_sauce_pan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsPutBack_pasta_1_To_sauce_pan_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsGrab_sauce_pan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1;
+	property:HasAction entity:Grab_sauce_pan_1 .
+entity:PutBack_sauce_pan_1_To_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsPutBack_pasta_1_To_sauce_pan_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsGrab_sauce_pan_1 == 1 AND IsPutBack_sauce_pan_1_To_stove_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1;
+	property:HasObservationFeature entity:IsPutBack_sauce_pan_1_To_stove_1;
+	property:HasAction entity:PutBack_sauce_pan_1_To_stove_1 .
+entity:InitialState_Cook_some_food_48 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 0 AND IsWalk_kitchen_cabinet_1 == 0 AND IsFind_kitchen_cabinet_1 == 0 AND IsOpen_kitchen_cabinet_1 == 0 AND IsFind_pasta_1 == 0 AND IsGrab_pasta_1 == 0 AND IsFind_water_1 == 0 AND IsGrab_water_1 == 0 AND IsFind_sauce_pan_1 == 0 AND IsPour_water_1_To_sauce_pan_1 == 0 AND IsFind_stove_1 == 0 AND IsSwitchOn_stove_1 == 0 AND IsPutBack_pasta_1_To_sauce_pan_1 == 0 AND IsFind_sauce_pan_1 == 0 AND IsGrab_sauce_pan_1 == 0 AND IsPutBack_sauce_pan_1_To_stove_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1;
+	property:HasObservationFeature entity:IsPutBack_sauce_pan_1_To_stove_1;
+	property:HasAction entity:Walk_kitchen_1;
+	property:HasAction entity:Walk_kitchen_cabinet_1;
+	property:HasAction entity:Find_kitchen_cabinet_1;
+	property:HasAction entity:Open_kitchen_cabinet_1;
+	property:HasAction entity:Find_pasta_1;
+	property:HasAction entity:Grab_pasta_1;
+	property:HasAction entity:Find_water_1;
+	property:HasAction entity:Grab_water_1;
+	property:HasAction entity:Find_sauce_pan_1;
+	property:HasAction entity:Pour_water_1_To_sauce_pan_1;
+	property:HasAction entity:Find_stove_1;
+	property:HasAction entity:SwitchOn_stove_1;
+	property:HasAction entity:PutBack_pasta_1_To_sauce_pan_1;
+	property:HasAction entity:Find_sauce_pan_1;
+	property:HasAction entity:Grab_sauce_pan_1;
+	property:HasAction entity:PutBack_sauce_pan_1_To_stove_1 .
+entity:FinalState_Cook_some_food_48 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_kitchen_cabinet_1 == 1 AND IsFind_kitchen_cabinet_1 == 1 AND IsOpen_kitchen_cabinet_1 == 1 AND IsFind_pasta_1 == 1 AND IsGrab_pasta_1 == 1 AND IsFind_water_1 == 1 AND IsGrab_water_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsPour_water_1_To_sauce_pan_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsPutBack_pasta_1_To_sauce_pan_1 == 1 AND IsFind_sauce_pan_1 == 1 AND IsGrab_sauce_pan_1 == 1 AND IsPutBack_sauce_pan_1_To_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1;
+	property:HasObservationFeature entity:IsPutBack_sauce_pan_1_To_stove_1;
+	property:HasAction entity:PutBack_sauce_pan_1_To_stove_1 .
+entity:IsWalk_kitchen_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_kitchen_cabinet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_kitchen_cabinet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsOpen_kitchen_cabinet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_pasta_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_pasta_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_water_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_water_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_sauce_pan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPour_water_1_To_sauce_pan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_pasta_1_To_sauce_pan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_sauce_pan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_sauce_pan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_sauce_pan_1_To_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1;
+	property:HasObservationFeature entity:IsFind_pasta_1;
+	property:HasObservationFeature entity:IsGrab_pasta_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsGrab_water_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1;
+	property:HasObservationFeature entity:IsPutBack_sauce_pan_1_To_stove_1 .
+entity:SetWalk_kitchen_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_1 .
+entity:SetWalk_kitchen_cabinet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_cabinet_1 .
+entity:SetFind_kitchen_cabinet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_kitchen_cabinet_1 .
+entity:SetOpen_kitchen_cabinet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsOpen_kitchen_cabinet_1 .
+entity:SetFind_pasta_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_pasta_1 .
+entity:SetGrab_pasta_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_pasta_1 .
+entity:SetFind_water_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_water_1 .
+entity:SetGrab_water_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_water_1 .
+entity:SetFind_sauce_pan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_sauce_pan_1 .
+entity:SetPour_water_1_To_sauce_pan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPour_water_1_To_sauce_pan_1 .
+entity:SetFind_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_stove_1 .
+entity:SetSwitchOn_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1 .
+entity:SetPutBack_pasta_1_To_sauce_pan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_pasta_1_To_sauce_pan_1 .
+entity:SetGrab_sauce_pan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_sauce_pan_1 .
+entity:SetPutBack_sauce_pan_1_To_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_sauce_pan_1_To_stove_1 .
+entity:Walk_kitchen_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_kitchen_1 .
+entity:Walk_kitchen_cabinet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_kitchen_cabinet_1 .
+entity:Find_kitchen_cabinet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_kitchen_cabinet_1 .
+entity:Open_kitchen_cabinet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetOpen_kitchen_cabinet_1 .
+entity:Find_pasta_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_pasta_1 .
+entity:Grab_pasta_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_pasta_1 .
+entity:Find_water_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_water_1 .
+entity:Grab_water_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_water_1 .
+entity:Find_sauce_pan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_sauce_pan_1 .
+entity:Pour_water_1_To_sauce_pan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPour_water_1_To_sauce_pan_1 .
+entity:Find_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_stove_1 .
+entity:SwitchOn_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_stove_1 .
+entity:PutBack_pasta_1_To_sauce_pan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_pasta_1_To_sauce_pan_1 .
+entity:Find_sauce_pan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_sauce_pan_1 .
+entity:Grab_sauce_pan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_sauce_pan_1 .
+entity:PutBack_sauce_pan_1_To_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_sauce_pan_1_To_stove_1 .

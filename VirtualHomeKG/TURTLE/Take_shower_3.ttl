@@ -1,0 +1,407 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Take_shower_3 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_bathroom_1_Done;
+	property:HasState entity:Walk_bathtub_1_Done;
+	property:HasState entity:Find_shower_1_Done;
+	property:HasState entity:Pull_shower_1_Done;
+	property:HasState entity:Find_face_soap_1_Done;
+	property:HasState entity:Scrub_face_soap_1_Done;
+	property:HasState entity:Rinse_face_soap_1_Done;
+	property:HasState entity:Push_shower_1_Done;
+	property:HasState entity:StandUp_Done;
+	property:HasState entity:Find_towel_1_Done;
+	property:HasState entity:Cover_towel_1_Done;
+	property:HasState entity:Walk_bedroom_1_Done;
+	property:HasState entity:InitialState_Take_shower_3;
+	property:HasState entity:FinalState_Take_shower_3;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsCover_towel_1;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasAction entity:Walk_bathroom_1;
+	property:HasAction entity:Walk_bathtub_1;
+	property:HasAction entity:Find_shower_1;
+	property:HasAction entity:Pull_shower_1;
+	property:HasAction entity:Find_face_soap_1;
+	property:HasAction entity:Scrub_face_soap_1;
+	property:HasAction entity:Rinse_face_soap_1;
+	property:HasAction entity:Push_shower_1;
+	property:HasAction entity:StandUp;
+	property:HasAction entity:Find_towel_1;
+	property:HasAction entity:Cover_towel_1;
+	property:HasAction entity:Walk_bedroom_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_bathroom_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasAction entity:Walk_bathroom_1 .
+entity:Walk_bathtub_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasAction entity:Walk_bathtub_1 .
+entity:Find_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasAction entity:Find_shower_1 .
+entity:Pull_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasAction entity:Pull_shower_1 .
+entity:Find_face_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasAction entity:Find_face_soap_1 .
+entity:Scrub_face_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasAction entity:Scrub_face_soap_1 .
+entity:Rinse_face_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasAction entity:Rinse_face_soap_1 .
+entity:Push_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1 AND IsPush_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasAction entity:Push_shower_1 .
+entity:StandUp_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1 AND IsPush_shower_1 == 1 AND IsStandUp == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasAction entity:StandUp .
+entity:Find_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1 AND IsPush_shower_1 == 1 AND IsStandUp == 1 AND IsFind_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasAction entity:Find_towel_1 .
+entity:Cover_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1 AND IsPush_shower_1 == 1 AND IsStandUp == 1 AND IsFind_towel_1 == 1 AND IsCover_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsCover_towel_1;
+	property:HasAction entity:Cover_towel_1 .
+entity:Walk_bedroom_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1 AND IsPush_shower_1 == 1 AND IsStandUp == 1 AND IsFind_towel_1 == 1 AND IsCover_towel_1 == 1 AND IsWalk_bedroom_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsCover_towel_1;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasAction entity:Walk_bedroom_1 .
+entity:InitialState_Take_shower_3 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 0 AND IsWalk_bathtub_1 == 0 AND IsFind_shower_1 == 0 AND IsPull_shower_1 == 0 AND IsFind_face_soap_1 == 0 AND IsScrub_face_soap_1 == 0 AND IsRinse_face_soap_1 == 0 AND IsPush_shower_1 == 0 AND IsStandUp == 0 AND IsFind_towel_1 == 0 AND IsCover_towel_1 == 0 AND IsWalk_bedroom_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsCover_towel_1;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasAction entity:Walk_bathroom_1;
+	property:HasAction entity:Walk_bathtub_1;
+	property:HasAction entity:Find_shower_1;
+	property:HasAction entity:Pull_shower_1;
+	property:HasAction entity:Find_face_soap_1;
+	property:HasAction entity:Scrub_face_soap_1;
+	property:HasAction entity:Rinse_face_soap_1;
+	property:HasAction entity:Push_shower_1;
+	property:HasAction entity:StandUp;
+	property:HasAction entity:Find_towel_1;
+	property:HasAction entity:Cover_towel_1;
+	property:HasAction entity:Walk_bedroom_1 .
+entity:FinalState_Take_shower_3 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bathroom_1 == 1 AND IsWalk_bathtub_1 == 1 AND IsFind_shower_1 == 1 AND IsPull_shower_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_face_soap_1 == 1 AND IsPush_shower_1 == 1 AND IsStandUp == 1 AND IsFind_towel_1 == 1 AND IsCover_towel_1 == 1 AND IsWalk_bedroom_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsCover_towel_1;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasAction entity:Walk_bedroom_1 .
+entity:IsWalk_bathroom_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_bathtub_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPull_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_face_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsScrub_face_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_face_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPush_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsStandUp a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsCover_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_bedroom_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathroom_1;
+	property:HasObservationFeature entity:IsWalk_bathtub_1;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsPull_shower_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_face_soap_1;
+	property:HasObservationFeature entity:IsPush_shower_1;
+	property:HasObservationFeature entity:IsStandUp;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsCover_towel_1;
+	property:HasObservationFeature entity:IsWalk_bedroom_1 .
+entity:SetWalk_bathroom_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathroom_1 .
+entity:SetWalk_bathtub_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bathtub_1 .
+entity:SetFind_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_shower_1 .
+entity:SetPull_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPull_shower_1 .
+entity:SetFind_face_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_face_soap_1 .
+entity:SetScrub_face_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsScrub_face_soap_1 .
+entity:SetRinse_face_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_face_soap_1 .
+entity:SetPush_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPush_shower_1 .
+entity:SetStandUp a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsStandUp .
+entity:SetFind_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_towel_1 .
+entity:SetCover_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsCover_towel_1 .
+entity:SetWalk_bedroom_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bedroom_1 .
+entity:Walk_bathroom_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bathroom_1 .
+entity:Walk_bathtub_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bathtub_1 .
+entity:Find_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_shower_1 .
+entity:Pull_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPull_shower_1 .
+entity:Find_face_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_face_soap_1 .
+entity:Scrub_face_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetScrub_face_soap_1 .
+entity:Rinse_face_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_face_soap_1 .
+entity:Push_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPush_shower_1 .
+entity:StandUp a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetStandUp .
+entity:Find_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_towel_1 .
+entity:Cover_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetCover_towel_1 .
+entity:Walk_bedroom_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bedroom_1 .

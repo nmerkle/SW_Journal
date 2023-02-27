@@ -1,0 +1,1930 @@
+[
+  {
+    "@id": "http://example.org/Entity/Walk_kitchen_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_coffee_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_coffee_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffee_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_coffee_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_coffee_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffee_filter_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_coffee_filter_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_coffee_filter_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_filter_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffe_maker_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Open_coffe_maker_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Open_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsOpen_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_coffee_filter_1_To_coffe_maker_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_filter_1_To_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsOpen_coffe_maker_1 == 1 AND IsPutBack_coffee_filter_1_To_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_coffee_1_To_coffe_maker_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_1_To_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsOpen_coffe_maker_1 == 1 AND IsPutBack_coffee_filter_1_To_coffe_maker_1 == 1 AND IsPutBack_coffee_1_To_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffe_maker_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsOpen_coffe_maker_1 == 1 AND IsPutBack_coffee_filter_1_To_coffe_maker_1 == 1 AND IsPutBack_coffee_1_To_coffe_maker_1 == 1 AND IsFind_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsOpen_coffe_maker_1 == 1 AND IsPutBack_coffee_filter_1_To_coffe_maker_1 == 1 AND IsPutBack_coffee_1_To_coffe_maker_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsSwitchOn_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Make_coffee_48",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Open_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 0 AND IsWalk_coffee_1 == 0 AND IsFind_coffee_1 == 0 AND IsGrab_coffee_1 == 0 AND IsFind_coffee_filter_1 == 0 AND IsGrab_coffee_filter_1 == 0 AND IsFind_coffe_maker_1 == 0 AND IsOpen_coffe_maker_1 == 0 AND IsPutBack_coffee_filter_1_To_coffe_maker_1 == 0 AND IsPutBack_coffee_1_To_coffe_maker_1 == 0 AND IsFind_coffe_maker_1 == 0 AND IsSwitchOn_coffe_maker_1 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Make_coffee_48",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_kitchen_1 == 1 AND IsWalk_coffee_1 == 1 AND IsFind_coffee_1 == 1 AND IsGrab_coffee_1 == 1 AND IsFind_coffee_filter_1 == 1 AND IsGrab_coffee_filter_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsOpen_coffe_maker_1 == 1 AND IsPutBack_coffee_filter_1_To_coffe_maker_1 == 1 AND IsPutBack_coffee_1_To_coffe_maker_1 == 1 AND IsFind_coffe_maker_1 == 1 AND IsSwitchOn_coffe_maker_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_kitchen_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_coffee_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_coffee_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_coffee_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_coffee_filter_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_coffee_filter_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsOpen_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_kitchen_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_coffee_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_coffee_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_coffee_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_coffee_filter_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_coffee_filter_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetOpen_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPutBack_coffee_filter_1_To_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPutBack_coffee_1_To_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetSwitchOn_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_kitchen_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_kitchen_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_coffee_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_coffee_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffee_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_coffee_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_coffee_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_coffee_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffee_filter_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_coffee_filter_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_coffee_filter_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_coffee_filter_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Open_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetOpen_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_coffee_filter_1_To_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPutBack_coffee_filter_1_To_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_coffee_1_To_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPutBack_coffee_1_To_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetSwitchOn_coffe_maker_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Make_coffee_48",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_coffee_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffee_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffee_filter_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_filter_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Open_coffe_maker_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_filter_1_To_coffe_maker_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_1_To_coffe_maker_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Make_coffee_48"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Make_coffee_48"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Open_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_kitchen_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_coffee_filter_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsOpen_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_coffe_maker_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_coffe_maker_1"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Make_coffee_48"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Walk_kitchen_1"
+      },
+      {
+        "@id": "Walk_coffee_1"
+      },
+      {
+        "@id": "Find_coffee_1"
+      },
+      {
+        "@id": "Grab_coffee_1"
+      },
+      {
+        "@id": "Find_coffee_filter_1"
+      },
+      {
+        "@id": "Grab_coffee_filter_1"
+      },
+      {
+        "@id": "Find_coffe_maker_1"
+      },
+      {
+        "@id": "Open_coffe_maker_1"
+      },
+      {
+        "@id": "PutBack_coffee_filter_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "PutBack_coffee_1_To_coffe_maker_1"
+      },
+      {
+        "@id": "Find_coffe_maker_1"
+      },
+      {
+        "@id": "SwitchOn_coffe_maker_1"
+      }
+    ]
+  }
+]

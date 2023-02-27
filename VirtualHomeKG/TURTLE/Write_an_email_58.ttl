@@ -1,0 +1,407 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Write_an_email_58 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_home_office_1_Done;
+	property:HasState entity:Walk_desk_1_Done;
+	property:HasState entity:Find_chair_1_Done;
+	property:HasState entity:Sit_chair_1_Done;
+	property:HasState entity:Find_computer_1_Done;
+	property:HasState entity:TurnTo_computer_1_Done;
+	property:HasState entity:LookAt_computer_1_Done;
+	property:HasState entity:SwitchOn_computer_1_Done;
+	property:HasState entity:Find_keyboard_1_Done;
+	property:HasState entity:Touch_keyboard_1_Done;
+	property:HasState entity:Find_mail_1_Done;
+	property:HasState entity:Write_mail_1_Done;
+	property:HasState entity:InitialState_Write_an_email_58;
+	property:HasState entity:FinalState_Write_an_email_58;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasObservationFeature entity:IsFind_mail_1;
+	property:HasObservationFeature entity:IsWrite_mail_1;
+	property:HasAction entity:Walk_home_office_1;
+	property:HasAction entity:Walk_desk_1;
+	property:HasAction entity:Find_chair_1;
+	property:HasAction entity:Sit_chair_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:LookAt_computer_1;
+	property:HasAction entity:SwitchOn_computer_1;
+	property:HasAction entity:Find_keyboard_1;
+	property:HasAction entity:Touch_keyboard_1;
+	property:HasAction entity:Find_mail_1;
+	property:HasAction entity:Write_mail_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_home_office_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasAction entity:Walk_home_office_1 .
+entity:Walk_desk_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasAction entity:Walk_desk_1 .
+entity:Find_chair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasAction entity:Find_chair_1 .
+entity:Sit_chair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasAction entity:Sit_chair_1 .
+entity:Find_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasAction entity:Find_computer_1 .
+entity:TurnTo_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasAction entity:TurnTo_computer_1 .
+entity:LookAt_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:SwitchOn_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1 AND IsSwitchOn_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasAction entity:SwitchOn_computer_1 .
+entity:Find_keyboard_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsFind_keyboard_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasAction entity:Find_keyboard_1 .
+entity:Touch_keyboard_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsTouch_keyboard_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasAction entity:Touch_keyboard_1 .
+entity:Find_mail_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsTouch_keyboard_1 == 1 AND IsFind_mail_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasObservationFeature entity:IsFind_mail_1;
+	property:HasAction entity:Find_mail_1 .
+entity:Write_mail_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsTouch_keyboard_1 == 1 AND IsFind_mail_1 == 1 AND IsWrite_mail_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasObservationFeature entity:IsFind_mail_1;
+	property:HasObservationFeature entity:IsWrite_mail_1;
+	property:HasAction entity:Write_mail_1 .
+entity:InitialState_Write_an_email_58 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 0 AND IsWalk_desk_1 == 0 AND IsFind_chair_1 == 0 AND IsSit_chair_1 == 0 AND IsFind_computer_1 == 0 AND IsTurnTo_computer_1 == 0 AND IsLookAt_computer_1 == 0 AND IsSwitchOn_computer_1 == 0 AND IsFind_keyboard_1 == 0 AND IsTouch_keyboard_1 == 0 AND IsFind_mail_1 == 0 AND IsWrite_mail_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasObservationFeature entity:IsFind_mail_1;
+	property:HasObservationFeature entity:IsWrite_mail_1;
+	property:HasAction entity:Walk_home_office_1;
+	property:HasAction entity:Walk_desk_1;
+	property:HasAction entity:Find_chair_1;
+	property:HasAction entity:Sit_chair_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:LookAt_computer_1;
+	property:HasAction entity:SwitchOn_computer_1;
+	property:HasAction entity:Find_keyboard_1;
+	property:HasAction entity:Touch_keyboard_1;
+	property:HasAction entity:Find_mail_1;
+	property:HasAction entity:Write_mail_1 .
+entity:FinalState_Write_an_email_58 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsTouch_keyboard_1 == 1 AND IsFind_mail_1 == 1 AND IsWrite_mail_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasObservationFeature entity:IsFind_mail_1;
+	property:HasObservationFeature entity:IsWrite_mail_1;
+	property:HasAction entity:Write_mail_1 .
+entity:IsWalk_home_office_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_desk_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_chair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSit_chair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLookAt_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_keyboard_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTouch_keyboard_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_mail_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWrite_mail_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsTouch_keyboard_1;
+	property:HasObservationFeature entity:IsFind_mail_1;
+	property:HasObservationFeature entity:IsWrite_mail_1 .
+entity:SetWalk_home_office_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_home_office_1 .
+entity:SetWalk_desk_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_desk_1 .
+entity:SetFind_chair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_chair_1 .
+entity:SetSit_chair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSit_chair_1 .
+entity:SetFind_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_computer_1 .
+entity:SetTurnTo_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_computer_1 .
+entity:SetLookAt_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLookAt_computer_1 .
+entity:SetSwitchOn_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1 .
+entity:SetFind_keyboard_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_keyboard_1 .
+entity:SetTouch_keyboard_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTouch_keyboard_1 .
+entity:SetFind_mail_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_mail_1 .
+entity:SetWrite_mail_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWrite_mail_1 .
+entity:Walk_home_office_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_home_office_1 .
+entity:Walk_desk_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_desk_1 .
+entity:Find_chair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_chair_1 .
+entity:Sit_chair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSit_chair_1 .
+entity:Find_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_computer_1 .
+entity:TurnTo_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_computer_1 .
+entity:LookAt_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLookAt_computer_1 .
+entity:SwitchOn_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_computer_1 .
+entity:Find_keyboard_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_keyboard_1 .
+entity:Touch_keyboard_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTouch_keyboard_1 .
+entity:Find_mail_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_mail_1 .
+entity:Write_mail_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWrite_mail_1 .

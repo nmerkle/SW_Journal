@@ -1,0 +1,10 @@
+Turn on light
+Walk to the Living Room. Switch on 1 light. Walk to dining room. Switch on 1 light. Walk to Entrance hall. Switch on 1 light.
+
+
+[Walk] <living_room> (1)
+[Walk] <lightswitch> (1)
+[Find] <lightswitch> (1)
+[SwitchOn] <lightswitch> (1)
+[Walk] <dining_room> (1)
+[Walk] <entrance_hall> (1)

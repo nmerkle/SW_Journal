@@ -1,0 +1,197 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Write_an_email_34 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_computer_1_Done;
+	property:HasState entity:TurnTo_computer_1_Done;
+	property:HasState entity:Find_keyboard_1_Done;
+	property:HasState entity:Type_keyboard_1_Done;
+	property:HasState entity:TurnTo_computer_1_Done;
+	property:HasState entity:LookAt_computer_1_Done;
+	property:HasState entity:InitialState_Write_an_email_34;
+	property:HasState entity:FinalState_Write_an_email_34;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:Find_keyboard_1;
+	property:HasAction entity:Type_keyboard_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:LookAt_computer_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasAction entity:Find_computer_1 .
+entity:TurnTo_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasAction entity:TurnTo_computer_1 .
+entity:Find_keyboard_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsFind_keyboard_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasAction entity:Find_keyboard_1 .
+entity:Type_keyboard_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsType_keyboard_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasAction entity:Type_keyboard_1 .
+entity:TurnTo_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsType_keyboard_1 == 1 AND IsTurnTo_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasAction entity:TurnTo_computer_1 .
+entity:LookAt_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsType_keyboard_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:InitialState_Write_an_email_34 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 0 AND IsTurnTo_computer_1 == 0 AND IsFind_keyboard_1 == 0 AND IsType_keyboard_1 == 0 AND IsTurnTo_computer_1 == 0 AND IsLookAt_computer_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:Find_keyboard_1;
+	property:HasAction entity:Type_keyboard_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:FinalState_Write_an_email_34 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsFind_keyboard_1 == 1 AND IsType_keyboard_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:IsFind_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_keyboard_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsType_keyboard_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLookAt_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsFind_keyboard_1;
+	property:HasObservationFeature entity:IsType_keyboard_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1 .
+entity:SetFind_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_computer_1 .
+entity:SetTurnTo_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_computer_1 .
+entity:SetFind_keyboard_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_keyboard_1 .
+entity:SetType_keyboard_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsType_keyboard_1 .
+entity:SetLookAt_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLookAt_computer_1 .
+entity:Find_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_computer_1 .
+entity:TurnTo_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_computer_1 .
+entity:Find_keyboard_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_keyboard_1 .
+entity:Type_keyboard_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetType_keyboard_1 .
+entity:TurnTo_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_computer_1 .
+entity:LookAt_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLookAt_computer_1 .

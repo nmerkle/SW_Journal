@@ -1,0 +1,2801 @@
+[
+  {
+    "@id": "http://example.org/Entity/Find_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_sink_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_plate_1_To_sink_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PutBack_plate_1_To_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_water_glass_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_water_glass_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Grab_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_water_glass_1_To_sink_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/PutBack_water_glass_1_To_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_dish_soap_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_dish_soap_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_sponge_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_sponge_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Pour_dish_soap_1_To_sponge_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Pour_dish_soap_1_To_sponge_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_faucet_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_faucet_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_faucet_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOn_faucet_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Wash_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsWash_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Rinse_plate_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Rinse_plate_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsWash_plate_1 == 1 AND IsRinse_plate_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_water_glass_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Wash_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsWash_plate_1 == 1 AND IsRinse_plate_1 == 1 AND IsWash_water_glass_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Rinse_water_glass_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Rinse_water_glass_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsWash_plate_1 == 1 AND IsRinse_plate_1 == 1 AND IsWash_water_glass_1 == 1 AND IsRinse_water_glass_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOff_faucet_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsWash_plate_1 == 1 AND IsRinse_plate_1 == 1 AND IsWash_water_glass_1 == 1 AND IsRinse_water_glass_1 == 1 AND IsSwitchOff_faucet_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Wash_dishes_by_hand_51",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Pour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 0 AND IsGrab_plate_1 == 0 AND IsFind_sink_1 == 0 AND IsPutBack_plate_1_To_sink_1 == 0 AND IsFind_water_glass_1 == 0 AND IsGrab_water_glass_1 == 0 AND IsPutBack_water_glass_1_To_sink_1 == 0 AND IsFind_dish_soap_1 == 0 AND IsFind_sponge_1 == 0 AND IsPour_dish_soap_1_To_sponge_1 == 0 AND IsFind_faucet_1 == 0 AND IsSwitchOn_faucet_1 == 0 AND IsWash_plate_1 == 0 AND IsRinse_plate_1 == 0 AND IsWash_water_glass_1 == 0 AND IsRinse_water_glass_1 == 0 AND IsSwitchOff_faucet_1 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Wash_dishes_by_hand_51",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/SwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsFind_plate_1 == 1 AND IsGrab_plate_1 == 1 AND IsFind_sink_1 == 1 AND IsPutBack_plate_1_To_sink_1 == 1 AND IsFind_water_glass_1 == 1 AND IsGrab_water_glass_1 == 1 AND IsPutBack_water_glass_1_To_sink_1 == 1 AND IsFind_dish_soap_1 == 1 AND IsFind_sponge_1 == 1 AND IsPour_dish_soap_1_To_sponge_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsWash_plate_1 == 1 AND IsRinse_plate_1 == 1 AND IsWash_water_glass_1 == 1 AND IsRinse_water_glass_1 == 1 AND IsSwitchOff_faucet_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_sink_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsGrab_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_dish_soap_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_sponge_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_faucet_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsSwitchOn_faucet_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWash_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsRinse_plate_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWash_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsRinse_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsSwitchOff_faucet_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOff_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_sink_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPutBack_plate_1_To_sink_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetGrab_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPutBack_water_glass_1_To_sink_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_dish_soap_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_sponge_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetPour_dish_soap_1_To_sponge_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_faucet_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetSwitchOn_faucet_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWash_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetRinse_plate_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWash_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetRinse_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetSwitchOff_faucet_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsSwitchOff_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_sink_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_plate_1_To_sink_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPutBack_plate_1_To_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Grab_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetGrab_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/PutBack_water_glass_1_To_sink_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPutBack_water_glass_1_To_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_dish_soap_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_dish_soap_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_sponge_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_sponge_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Pour_dish_soap_1_To_sponge_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetPour_dish_soap_1_To_sponge_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_faucet_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOn_faucet_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetSwitchOn_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWash_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Rinse_plate_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetRinse_plate_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWash_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Rinse_water_glass_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetRinse_water_glass_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SwitchOff_faucet_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetSwitchOff_faucet_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_dishes_by_hand_51",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Find_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sink_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_plate_1_To_sink_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_water_glass_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_water_glass_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_water_glass_1_To_sink_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_dish_soap_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sponge_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Pour_dish_soap_1_To_sponge_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_faucet_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_faucet_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_plate_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_water_glass_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_water_glass_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOff_faucet_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Wash_dishes_by_hand_51"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Wash_dishes_by_hand_51"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Grab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/PutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Pour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/SwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsGrab_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_dish_soap_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsPour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOn_faucet_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_plate_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_water_glass_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsSwitchOff_faucet_1"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Wash_dishes_by_hand_51"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Find_plate_1"
+      },
+      {
+        "@id": "Grab_plate_1"
+      },
+      {
+        "@id": "Find_sink_1"
+      },
+      {
+        "@id": "PutBack_plate_1_To_sink_1"
+      },
+      {
+        "@id": "Find_water_glass_1"
+      },
+      {
+        "@id": "Grab_water_glass_1"
+      },
+      {
+        "@id": "PutBack_water_glass_1_To_sink_1"
+      },
+      {
+        "@id": "Find_dish_soap_1"
+      },
+      {
+        "@id": "Find_sponge_1"
+      },
+      {
+        "@id": "Pour_dish_soap_1_To_sponge_1"
+      },
+      {
+        "@id": "Find_faucet_1"
+      },
+      {
+        "@id": "SwitchOn_faucet_1"
+      },
+      {
+        "@id": "Wash_plate_1"
+      },
+      {
+        "@id": "Rinse_plate_1"
+      },
+      {
+        "@id": "Wash_water_glass_1"
+      },
+      {
+        "@id": "Rinse_water_glass_1"
+      },
+      {
+        "@id": "SwitchOff_faucet_1"
+      }
+    ]
+  }
+]

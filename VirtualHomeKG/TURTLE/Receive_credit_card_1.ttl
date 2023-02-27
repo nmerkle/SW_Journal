@@ -1,0 +1,334 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Receive_credit_card_1 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_entrance_hall_1_Done;
+	property:HasState entity:Walk_envelope_1_Done;
+	property:HasState entity:Find_envelope_1_Done;
+	property:HasState entity:Grab_envelope_1_Done;
+	property:HasState entity:Walk_living_room_1_Done;
+	property:HasState entity:Walk_scissors_1_Done;
+	property:HasState entity:Find_scissors_1_Done;
+	property:HasState entity:Open_envelope_1_Done;
+	property:HasState entity:Find_creditcard_1_Done;
+	property:HasState entity:Grab_creditcard_1_Done;
+	property:HasState entity:InitialState_Receive_credit_card_1;
+	property:HasState entity:FinalState_Receive_credit_card_1;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasObservationFeature entity:IsFind_creditcard_1;
+	property:HasObservationFeature entity:IsGrab_creditcard_1;
+	property:HasAction entity:Walk_entrance_hall_1;
+	property:HasAction entity:Walk_envelope_1;
+	property:HasAction entity:Find_envelope_1;
+	property:HasAction entity:Grab_envelope_1;
+	property:HasAction entity:Walk_living_room_1;
+	property:HasAction entity:Walk_scissors_1;
+	property:HasAction entity:Find_scissors_1;
+	property:HasAction entity:Open_envelope_1;
+	property:HasAction entity:Find_creditcard_1;
+	property:HasAction entity:Grab_creditcard_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_entrance_hall_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasAction entity:Walk_entrance_hall_1 .
+entity:Walk_envelope_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasAction entity:Walk_envelope_1 .
+entity:Find_envelope_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasAction entity:Find_envelope_1 .
+entity:Grab_envelope_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasAction entity:Grab_envelope_1 .
+entity:Walk_living_room_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasAction entity:Walk_living_room_1 .
+entity:Walk_scissors_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1 AND IsWalk_scissors_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasAction entity:Walk_scissors_1 .
+entity:Find_scissors_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1 AND IsWalk_scissors_1 == 1 AND IsFind_scissors_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasAction entity:Find_scissors_1 .
+entity:Open_envelope_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1 AND IsWalk_scissors_1 == 1 AND IsFind_scissors_1 == 1 AND IsOpen_envelope_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasAction entity:Open_envelope_1 .
+entity:Find_creditcard_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1 AND IsWalk_scissors_1 == 1 AND IsFind_scissors_1 == 1 AND IsOpen_envelope_1 == 1 AND IsFind_creditcard_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasObservationFeature entity:IsFind_creditcard_1;
+	property:HasAction entity:Find_creditcard_1 .
+entity:Grab_creditcard_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1 AND IsWalk_scissors_1 == 1 AND IsFind_scissors_1 == 1 AND IsOpen_envelope_1 == 1 AND IsFind_creditcard_1 == 1 AND IsGrab_creditcard_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasObservationFeature entity:IsFind_creditcard_1;
+	property:HasObservationFeature entity:IsGrab_creditcard_1;
+	property:HasAction entity:Grab_creditcard_1 .
+entity:InitialState_Receive_credit_card_1 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 0 AND IsWalk_envelope_1 == 0 AND IsFind_envelope_1 == 0 AND IsGrab_envelope_1 == 0 AND IsWalk_living_room_1 == 0 AND IsWalk_scissors_1 == 0 AND IsFind_scissors_1 == 0 AND IsOpen_envelope_1 == 0 AND IsFind_creditcard_1 == 0 AND IsGrab_creditcard_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasObservationFeature entity:IsFind_creditcard_1;
+	property:HasObservationFeature entity:IsGrab_creditcard_1;
+	property:HasAction entity:Walk_entrance_hall_1;
+	property:HasAction entity:Walk_envelope_1;
+	property:HasAction entity:Find_envelope_1;
+	property:HasAction entity:Grab_envelope_1;
+	property:HasAction entity:Walk_living_room_1;
+	property:HasAction entity:Walk_scissors_1;
+	property:HasAction entity:Find_scissors_1;
+	property:HasAction entity:Open_envelope_1;
+	property:HasAction entity:Find_creditcard_1;
+	property:HasAction entity:Grab_creditcard_1 .
+entity:FinalState_Receive_credit_card_1 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_entrance_hall_1 == 1 AND IsWalk_envelope_1 == 1 AND IsFind_envelope_1 == 1 AND IsGrab_envelope_1 == 1 AND IsWalk_living_room_1 == 1 AND IsWalk_scissors_1 == 1 AND IsFind_scissors_1 == 1 AND IsOpen_envelope_1 == 1 AND IsFind_creditcard_1 == 1 AND IsGrab_creditcard_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasObservationFeature entity:IsFind_creditcard_1;
+	property:HasObservationFeature entity:IsGrab_creditcard_1;
+	property:HasAction entity:Grab_creditcard_1 .
+entity:IsWalk_entrance_hall_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_envelope_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_envelope_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_envelope_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_living_room_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_scissors_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_scissors_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsOpen_envelope_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_creditcard_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_creditcard_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1;
+	property:HasObservationFeature entity:IsWalk_envelope_1;
+	property:HasObservationFeature entity:IsFind_envelope_1;
+	property:HasObservationFeature entity:IsGrab_envelope_1;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_scissors_1;
+	property:HasObservationFeature entity:IsFind_scissors_1;
+	property:HasObservationFeature entity:IsOpen_envelope_1;
+	property:HasObservationFeature entity:IsFind_creditcard_1;
+	property:HasObservationFeature entity:IsGrab_creditcard_1 .
+entity:SetWalk_entrance_hall_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_entrance_hall_1 .
+entity:SetWalk_envelope_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_envelope_1 .
+entity:SetFind_envelope_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_envelope_1 .
+entity:SetGrab_envelope_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_envelope_1 .
+entity:SetWalk_living_room_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_living_room_1 .
+entity:SetWalk_scissors_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_scissors_1 .
+entity:SetFind_scissors_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_scissors_1 .
+entity:SetOpen_envelope_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsOpen_envelope_1 .
+entity:SetFind_creditcard_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_creditcard_1 .
+entity:SetGrab_creditcard_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_creditcard_1 .
+entity:Walk_entrance_hall_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_entrance_hall_1 .
+entity:Walk_envelope_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_envelope_1 .
+entity:Find_envelope_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_envelope_1 .
+entity:Grab_envelope_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_envelope_1 .
+entity:Walk_living_room_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_living_room_1 .
+entity:Walk_scissors_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_scissors_1 .
+entity:Find_scissors_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_scissors_1 .
+entity:Open_envelope_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetOpen_envelope_1 .
+entity:Find_creditcard_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_creditcard_1 .
+entity:Grab_creditcard_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_creditcard_1 .

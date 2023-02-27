@@ -1,0 +1,1469 @@
+[
+  {
+    "@id": "http://example.org/Entity/Walk_bedroom_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bedroom_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_bed_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bed_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_bed_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_bed_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_cd_player_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_cd_player_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_button_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_button_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1 AND IsFind_button_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Touch_button_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Touch_button_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1 AND IsFind_button_1 == 1 AND IsTouch_button_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Lie_bed_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Lie_bed_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1 AND IsFind_button_1 == 1 AND IsTouch_button_1 == 1 AND IsLie_bed_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_button_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_button_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1 AND IsFind_button_1 == 1 AND IsTouch_button_1 == 1 AND IsLie_bed_1 == 1 AND IsFind_button_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Touch_button_2_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Touch_button_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1 AND IsFind_button_1 == 1 AND IsTouch_button_1 == 1 AND IsLie_bed_1 == 1 AND IsFind_button_2 == 1 AND IsTouch_button_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Listen_to_music_15",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Touch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Lie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Touch_button_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 0 AND IsWalk_bed_1 == 0 AND IsFind_bed_1 == 0 AND IsFind_cd_player_1 == 0 AND IsFind_button_1 == 0 AND IsTouch_button_1 == 0 AND IsLie_bed_1 == 0 AND IsFind_button_2 == 0 AND IsTouch_button_2 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Listen_to_music_15",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Touch_button_2"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bedroom_1 == 1 AND IsWalk_bed_1 == 1 AND IsFind_bed_1 == 1 AND IsFind_cd_player_1 == 1 AND IsFind_button_1 == 1 AND IsTouch_button_1 == 1 AND IsLie_bed_1 == 1 AND IsFind_button_2 == 1 AND IsTouch_button_2 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_bedroom_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_bed_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_bed_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_cd_player_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_button_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsTouch_button_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsLie_bed_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_button_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsTouch_button_2",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_bedroom_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_bed_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_bed_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_cd_player_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_button_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetTouch_button_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetLie_bed_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_button_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetTouch_button_2",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_bedroom_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_bedroom_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_bed_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_bed_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_bed_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_bed_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_cd_player_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_cd_player_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_button_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Touch_button_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetTouch_button_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Lie_bed_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetLie_bed_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_button_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_button_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Touch_button_2",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetTouch_button_2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Listen_to_music_15",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Walk_bedroom_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_bed_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_bed_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_cd_player_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Touch_button_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Lie_bed_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Touch_button_2_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Listen_to_music_15"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Listen_to_music_15"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Touch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Lie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/Touch_button_2"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bedroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_cd_player_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsLie_bed_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_button_2"
+      },
+      {
+        "@id": "http://example.org/Entity/IsTouch_button_2"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Listen_to_music_15"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Walk_bedroom_1"
+      },
+      {
+        "@id": "Walk_bed_1"
+      },
+      {
+        "@id": "Find_bed_1"
+      },
+      {
+        "@id": "Find_cd_player_1"
+      },
+      {
+        "@id": "Find_button_1"
+      },
+      {
+        "@id": "Touch_button_1"
+      },
+      {
+        "@id": "Lie_bed_1"
+      },
+      {
+        "@id": "Find_button_2"
+      },
+      {
+        "@id": "Touch_button_2"
+      }
+    ]
+  }
+]

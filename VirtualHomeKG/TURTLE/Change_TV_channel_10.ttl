@@ -1,0 +1,169 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Change_TV_channel_10 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_living_room_1_Done;
+	property:HasState entity:Walk_remote_control_1_Done;
+	property:HasState entity:Grab_remote_control_1_Done;
+	property:HasState entity:TurnTo_remote_control_1_Done;
+	property:HasState entity:PointAt_remote_control_1_Done;
+	property:HasState entity:InitialState_Change_TV_channel_10;
+	property:HasState entity:FinalState_Change_TV_channel_10;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1;
+	property:HasObservationFeature entity:IsPointAt_remote_control_1;
+	property:HasAction entity:Walk_living_room_1;
+	property:HasAction entity:Walk_remote_control_1;
+	property:HasAction entity:Grab_remote_control_1;
+	property:HasAction entity:TurnTo_remote_control_1;
+	property:HasAction entity:PointAt_remote_control_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_living_room_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasAction entity:Walk_living_room_1 .
+entity:Walk_remote_control_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 1 AND IsWalk_remote_control_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasAction entity:Walk_remote_control_1 .
+entity:Grab_remote_control_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 1 AND IsWalk_remote_control_1 == 1 AND IsGrab_remote_control_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasAction entity:Grab_remote_control_1 .
+entity:TurnTo_remote_control_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 1 AND IsWalk_remote_control_1 == 1 AND IsGrab_remote_control_1 == 1 AND IsTurnTo_remote_control_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1;
+	property:HasAction entity:TurnTo_remote_control_1 .
+entity:PointAt_remote_control_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 1 AND IsWalk_remote_control_1 == 1 AND IsGrab_remote_control_1 == 1 AND IsTurnTo_remote_control_1 == 1 AND IsPointAt_remote_control_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1;
+	property:HasObservationFeature entity:IsPointAt_remote_control_1;
+	property:HasAction entity:PointAt_remote_control_1 .
+entity:InitialState_Change_TV_channel_10 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 0 AND IsWalk_remote_control_1 == 0 AND IsGrab_remote_control_1 == 0 AND IsTurnTo_remote_control_1 == 0 AND IsPointAt_remote_control_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1;
+	property:HasObservationFeature entity:IsPointAt_remote_control_1;
+	property:HasAction entity:Walk_living_room_1;
+	property:HasAction entity:Walk_remote_control_1;
+	property:HasAction entity:Grab_remote_control_1;
+	property:HasAction entity:TurnTo_remote_control_1;
+	property:HasAction entity:PointAt_remote_control_1 .
+entity:FinalState_Change_TV_channel_10 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_living_room_1 == 1 AND IsWalk_remote_control_1 == 1 AND IsGrab_remote_control_1 == 1 AND IsTurnTo_remote_control_1 == 1 AND IsPointAt_remote_control_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1;
+	property:HasObservationFeature entity:IsPointAt_remote_control_1;
+	property:HasAction entity:PointAt_remote_control_1 .
+entity:IsWalk_living_room_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_remote_control_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_remote_control_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_remote_control_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPointAt_remote_control_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_living_room_1;
+	property:HasObservationFeature entity:IsWalk_remote_control_1;
+	property:HasObservationFeature entity:IsGrab_remote_control_1;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1;
+	property:HasObservationFeature entity:IsPointAt_remote_control_1 .
+entity:SetWalk_living_room_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_living_room_1 .
+entity:SetWalk_remote_control_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_remote_control_1 .
+entity:SetGrab_remote_control_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_remote_control_1 .
+entity:SetTurnTo_remote_control_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_remote_control_1 .
+entity:SetPointAt_remote_control_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPointAt_remote_control_1 .
+entity:Walk_living_room_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_living_room_1 .
+entity:Walk_remote_control_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_remote_control_1 .
+entity:Grab_remote_control_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_remote_control_1 .
+entity:TurnTo_remote_control_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_remote_control_1 .
+entity:PointAt_remote_control_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPointAt_remote_control_1 .

@@ -1,0 +1,1316 @@
+[
+  {
+    "@id": "http://example.org/Entity/Walk_bathroom_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bathroom_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_tooth_paste_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_tooth_paste_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_tooth_paste_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_tooth_paste_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Scrub_tooth_paste_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Scrub_tooth_paste_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1 AND IsScrub_tooth_paste_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_toothbrush_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_toothbrush_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1 AND IsScrub_tooth_paste_1 == 1 AND IsFind_toothbrush_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_toothbrush_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Wash_toothbrush_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1 AND IsScrub_tooth_paste_1 == 1 AND IsFind_toothbrush_1 == 1 AND IsWash_toothbrush_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_sink_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Find_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1 AND IsScrub_tooth_paste_1 == 1 AND IsFind_toothbrush_1 == 1 AND IsWash_toothbrush_1 == 1 AND IsFind_sink_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Rinse_sink_1_Done",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Rinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1 AND IsScrub_tooth_paste_1 == 1 AND IsFind_toothbrush_1 == 1 AND IsWash_toothbrush_1 == 1 AND IsFind_sink_1 == 1 AND IsRinse_sink_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/InitialState_Wash_teeth_2",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Scrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 0 AND IsWalk_tooth_paste_1 == 0 AND IsFind_tooth_paste_1 == 0 AND IsScrub_tooth_paste_1 == 0 AND IsFind_toothbrush_1 == 0 AND IsWash_toothbrush_1 == 0 AND IsFind_sink_1 == 0 AND IsRinse_sink_1 == 0"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/FinalState_Wash_teeth_2",
+    "@type": [
+      "http://example.org/Concept/State"
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Rinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/IsGoal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsFinalState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/IsInitialState": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/HasExpression": [
+      {
+        "@value": "IsWalk_bathroom_1 == 1 AND IsWalk_tooth_paste_1 == 1 AND IsFind_tooth_paste_1 == 1 AND IsScrub_tooth_paste_1 == 1 AND IsFind_toothbrush_1 == 1 AND IsWash_toothbrush_1 == 1 AND IsFind_sink_1 == 1 AND IsRinse_sink_1 == 1"
+      }
+    ],
+    "http://example.org/Property/HasReward": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_bathroom_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWalk_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsScrub_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_toothbrush_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsWash_toothbrush_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsFind_sink_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/IsRinse_sink_1",
+    "@type": [
+      "http://example.org/Concept/ObservationFeature"
+    ],
+    "http://example.org/Property/HasRangeStart": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0
+      }
+    ],
+    "http://example.org/Property/HasRangeEnd": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasFeatureType": [
+      {
+        "@value": "NOMINAL"
+      }
+    ],
+    "http://example.org/Property/HasUnit": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskTopic",
+    "@type": [
+      "http://example.org/Concept/Topic"
+    ],
+    "http://example.org/Property/HasName": [
+      {
+        "@value": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_bathroom_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWalk_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetScrub_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_toothbrush_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetWash_toothbrush_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetFind_sink_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/SetRinse_sink_1",
+    "@type": [
+      "http://example.org/Concept/Effect"
+    ],
+    "http://example.org/Property/HasImpactType": [
+      {
+        "@value": "ON"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsRinse_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_bathroom_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_bathroom_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Walk_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWalk_tooth_paste_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_tooth_paste_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Scrub_tooth_paste_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetScrub_tooth_paste_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_toothbrush_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_toothbrush_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_toothbrush_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetWash_toothbrush_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Find_sink_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetFind_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Rinse_sink_1",
+    "@type": [
+      "http://example.org/Concept/Action"
+    ],
+    "http://example.org/Property/HasText": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://example.org/Property/HasEffect": [
+      {
+        "@id": "http://example.org/Entity/SetRinse_sink_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/Wash_teeth_2",
+    "@type": [
+      "http://example.org/Concept/Task"
+    ],
+    "http://example.org/Property/HasStatus": [
+      {
+        "@value": "OPEN"
+      }
+    ],
+    "http://example.org/Property/IsSequential": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
+    "http://example.org/Property/HasNumberOfActors": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://example.org/Property/HasCommunicationType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Asynchronized"
+      }
+    ],
+    "http://example.org/Property/HasState": [
+      {
+        "@id": "http://example.org/Entity/Walk_bathroom_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_tooth_paste_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_tooth_paste_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Scrub_tooth_paste_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_toothbrush_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_toothbrush_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sink_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_sink_1_Done"
+      },
+      {
+        "@id": "http://example.org/Entity/InitialState_Wash_teeth_2"
+      },
+      {
+        "@id": "http://example.org/Entity/FinalState_Wash_teeth_2"
+      }
+    ],
+    "http://example.org/Property/HasAction": [
+      {
+        "@id": "http://example.org/Entity/Walk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Walk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Scrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Wash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Find_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/Rinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/HasObservationFeature": [
+      {
+        "@id": "http://example.org/Entity/IsWalk_bathroom_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWalk_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsScrub_tooth_paste_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsWash_toothbrush_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsFind_sink_1"
+      },
+      {
+        "@id": "http://example.org/Entity/IsRinse_sink_1"
+      }
+    ],
+    "http://example.org/Property/SubscribesFor": [
+      {
+        "@id": "http://example.org/Entity/TaskTopic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Entity/TaskEmbeddingAgent",
+    "@type": [
+      "http://example.org/Concept/Category-3AAgent"
+    ],
+    "http://example.org/Property/Property-3AHasName": [
+      {
+        "@value": "TaskEmbeddingAgent"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAlgorithm": [
+      {
+        "@value": "dqn"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasLearningRate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.01
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpsilon": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.2
+      }
+    ],
+    "http://example.org/Property/Property-3AHasDiscountFactor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@value": 0.7
+      }
+    ],
+    "http://example.org/Property/Property-3AHasEpisodes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 20000
+      }
+    ],
+    "http://example.org/Property/Property-3AIsHashing": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": false
+      }
+    ],
+    "http://example.org/Property/Property-3ASubscribesFor": [
+      {
+        "@id": "TaskTopic"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasTask": [
+      {
+        "@id": "Wash_teeth_2"
+      }
+    ],
+    "http://example.org/Property/Property-3AHasAction": [
+      {
+        "@id": "Walk_bathroom_1"
+      },
+      {
+        "@id": "Walk_tooth_paste_1"
+      },
+      {
+        "@id": "Find_tooth_paste_1"
+      },
+      {
+        "@id": "Scrub_tooth_paste_1"
+      },
+      {
+        "@id": "Find_toothbrush_1"
+      },
+      {
+        "@id": "Wash_toothbrush_1"
+      },
+      {
+        "@id": "Find_sink_1"
+      },
+      {
+        "@id": "Rinse_sink_1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,299 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Read_book_60 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_desk_1_Done;
+	property:HasState entity:Find_book_1_Done;
+	property:HasState entity:Find_bookmark_1_Done;
+	property:HasState entity:Grab_bookmark_1_Done;
+	property:HasState entity:Find_couch_1_Done;
+	property:HasState entity:Sit_couch_1_Done;
+	property:HasState entity:Grab_book_1_Done;
+	property:HasState entity:Read_book_1_Done;
+	property:HasState entity:PutBack_bookmark_1_To_book_1_Done;
+	property:HasState entity:InitialState_Read_book_60;
+	property:HasState entity:FinalState_Read_book_60;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasObservationFeature entity:IsRead_book_1;
+	property:HasObservationFeature entity:IsPutBack_bookmark_1_To_book_1;
+	property:HasAction entity:Walk_desk_1;
+	property:HasAction entity:Find_book_1;
+	property:HasAction entity:Find_bookmark_1;
+	property:HasAction entity:Grab_bookmark_1;
+	property:HasAction entity:Find_couch_1;
+	property:HasAction entity:Sit_couch_1;
+	property:HasAction entity:Grab_book_1;
+	property:HasAction entity:Read_book_1;
+	property:HasAction entity:PutBack_bookmark_1_To_book_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_desk_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasAction entity:Walk_desk_1 .
+entity:Find_book_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasAction entity:Find_book_1 .
+entity:Find_bookmark_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasAction entity:Find_bookmark_1 .
+entity:Grab_bookmark_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasAction entity:Grab_bookmark_1 .
+entity:Find_couch_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1 AND IsFind_couch_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasAction entity:Find_couch_1 .
+entity:Sit_couch_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1 AND IsFind_couch_1 == 1 AND IsSit_couch_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasAction entity:Sit_couch_1 .
+entity:Grab_book_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1 AND IsFind_couch_1 == 1 AND IsSit_couch_1 == 1 AND IsGrab_book_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasAction entity:Grab_book_1 .
+entity:Read_book_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1 AND IsFind_couch_1 == 1 AND IsSit_couch_1 == 1 AND IsGrab_book_1 == 1 AND IsRead_book_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasObservationFeature entity:IsRead_book_1;
+	property:HasAction entity:Read_book_1 .
+entity:PutBack_bookmark_1_To_book_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1 AND IsFind_couch_1 == 1 AND IsSit_couch_1 == 1 AND IsGrab_book_1 == 1 AND IsRead_book_1 == 1 AND IsPutBack_bookmark_1_To_book_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasObservationFeature entity:IsRead_book_1;
+	property:HasObservationFeature entity:IsPutBack_bookmark_1_To_book_1;
+	property:HasAction entity:PutBack_bookmark_1_To_book_1 .
+entity:InitialState_Read_book_60 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 0 AND IsFind_book_1 == 0 AND IsFind_bookmark_1 == 0 AND IsGrab_bookmark_1 == 0 AND IsFind_couch_1 == 0 AND IsSit_couch_1 == 0 AND IsGrab_book_1 == 0 AND IsRead_book_1 == 0 AND IsPutBack_bookmark_1_To_book_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasObservationFeature entity:IsRead_book_1;
+	property:HasObservationFeature entity:IsPutBack_bookmark_1_To_book_1;
+	property:HasAction entity:Walk_desk_1;
+	property:HasAction entity:Find_book_1;
+	property:HasAction entity:Find_bookmark_1;
+	property:HasAction entity:Grab_bookmark_1;
+	property:HasAction entity:Find_couch_1;
+	property:HasAction entity:Sit_couch_1;
+	property:HasAction entity:Grab_book_1;
+	property:HasAction entity:Read_book_1;
+	property:HasAction entity:PutBack_bookmark_1_To_book_1 .
+entity:FinalState_Read_book_60 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_desk_1 == 1 AND IsFind_book_1 == 1 AND IsFind_bookmark_1 == 1 AND IsGrab_bookmark_1 == 1 AND IsFind_couch_1 == 1 AND IsSit_couch_1 == 1 AND IsGrab_book_1 == 1 AND IsRead_book_1 == 1 AND IsPutBack_bookmark_1_To_book_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasObservationFeature entity:IsRead_book_1;
+	property:HasObservationFeature entity:IsPutBack_bookmark_1_To_book_1;
+	property:HasAction entity:PutBack_bookmark_1_To_book_1 .
+entity:IsWalk_desk_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_book_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_bookmark_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_bookmark_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_couch_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSit_couch_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_book_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRead_book_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_bookmark_1_To_book_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_book_1;
+	property:HasObservationFeature entity:IsFind_bookmark_1;
+	property:HasObservationFeature entity:IsGrab_bookmark_1;
+	property:HasObservationFeature entity:IsFind_couch_1;
+	property:HasObservationFeature entity:IsSit_couch_1;
+	property:HasObservationFeature entity:IsGrab_book_1;
+	property:HasObservationFeature entity:IsRead_book_1;
+	property:HasObservationFeature entity:IsPutBack_bookmark_1_To_book_1 .
+entity:SetWalk_desk_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_desk_1 .
+entity:SetFind_book_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_book_1 .
+entity:SetFind_bookmark_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_bookmark_1 .
+entity:SetGrab_bookmark_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_bookmark_1 .
+entity:SetFind_couch_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_couch_1 .
+entity:SetSit_couch_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSit_couch_1 .
+entity:SetGrab_book_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_book_1 .
+entity:SetRead_book_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRead_book_1 .
+entity:SetPutBack_bookmark_1_To_book_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_bookmark_1_To_book_1 .
+entity:Walk_desk_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_desk_1 .
+entity:Find_book_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_book_1 .
+entity:Find_bookmark_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_bookmark_1 .
+entity:Grab_bookmark_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_bookmark_1 .
+entity:Find_couch_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_couch_1 .
+entity:Sit_couch_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSit_couch_1 .
+entity:Grab_book_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_book_1 .
+entity:Read_book_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRead_book_1 .
+entity:PutBack_bookmark_1_To_book_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_bookmark_1_To_book_1 .

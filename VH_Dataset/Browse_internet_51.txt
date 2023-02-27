@@ -1,0 +1,7 @@
+Browse internet
+Browsing the internet contains checking the internet on the computer and opening web browser
+
+
+[Find] <computer> (1)
+[TurnTo] <computer> (1)
+[LookAt] <computer> (1)

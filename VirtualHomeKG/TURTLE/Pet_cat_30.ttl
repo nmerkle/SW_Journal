@@ -1,0 +1,169 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Pet_cat_30 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_cat_1_Done;
+	property:HasState entity:TurnTo_cat_1_Done;
+	property:HasState entity:LookAt_cat_1_Done;
+	property:HasState entity:Find_face_1_Done;
+	property:HasState entity:Touch_face_1_Done;
+	property:HasState entity:InitialState_Pet_cat_30;
+	property:HasState entity:FinalState_Pet_cat_30;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasObservationFeature entity:IsFind_face_1;
+	property:HasObservationFeature entity:IsTouch_face_1;
+	property:HasAction entity:Find_cat_1;
+	property:HasAction entity:TurnTo_cat_1;
+	property:HasAction entity:LookAt_cat_1;
+	property:HasAction entity:Find_face_1;
+	property:HasAction entity:Touch_face_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_cat_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasAction entity:Find_cat_1 .
+entity:TurnTo_cat_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 1 AND IsTurnTo_cat_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasAction entity:TurnTo_cat_1 .
+entity:LookAt_cat_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 1 AND IsTurnTo_cat_1 == 1 AND IsLookAt_cat_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasAction entity:LookAt_cat_1 .
+entity:Find_face_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 1 AND IsTurnTo_cat_1 == 1 AND IsLookAt_cat_1 == 1 AND IsFind_face_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasObservationFeature entity:IsFind_face_1;
+	property:HasAction entity:Find_face_1 .
+entity:Touch_face_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 1 AND IsTurnTo_cat_1 == 1 AND IsLookAt_cat_1 == 1 AND IsFind_face_1 == 1 AND IsTouch_face_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasObservationFeature entity:IsFind_face_1;
+	property:HasObservationFeature entity:IsTouch_face_1;
+	property:HasAction entity:Touch_face_1 .
+entity:InitialState_Pet_cat_30 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 0 AND IsTurnTo_cat_1 == 0 AND IsLookAt_cat_1 == 0 AND IsFind_face_1 == 0 AND IsTouch_face_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasObservationFeature entity:IsFind_face_1;
+	property:HasObservationFeature entity:IsTouch_face_1;
+	property:HasAction entity:Find_cat_1;
+	property:HasAction entity:TurnTo_cat_1;
+	property:HasAction entity:LookAt_cat_1;
+	property:HasAction entity:Find_face_1;
+	property:HasAction entity:Touch_face_1 .
+entity:FinalState_Pet_cat_30 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_cat_1 == 1 AND IsTurnTo_cat_1 == 1 AND IsLookAt_cat_1 == 1 AND IsFind_face_1 == 1 AND IsTouch_face_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasObservationFeature entity:IsFind_face_1;
+	property:HasObservationFeature entity:IsTouch_face_1;
+	property:HasAction entity:Touch_face_1 .
+entity:IsFind_cat_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_cat_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLookAt_cat_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_face_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTouch_face_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_cat_1;
+	property:HasObservationFeature entity:IsTurnTo_cat_1;
+	property:HasObservationFeature entity:IsLookAt_cat_1;
+	property:HasObservationFeature entity:IsFind_face_1;
+	property:HasObservationFeature entity:IsTouch_face_1 .
+entity:SetFind_cat_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_cat_1 .
+entity:SetTurnTo_cat_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_cat_1 .
+entity:SetLookAt_cat_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLookAt_cat_1 .
+entity:SetFind_face_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_face_1 .
+entity:SetTouch_face_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTouch_face_1 .
+entity:Find_cat_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_cat_1 .
+entity:TurnTo_cat_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_cat_1 .
+entity:LookAt_cat_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLookAt_cat_1 .
+entity:Find_face_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_face_1 .
+entity:Touch_face_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTouch_face_1 .

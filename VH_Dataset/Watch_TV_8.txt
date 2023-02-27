@@ -1,0 +1,10 @@
+Watch TV
+Watch the tv without lighting
+
+
+[Find] <lightswitch> (1)
+[SwitchOff] <lightswitch> (1)
+[Find] <sofa> (1)
+[Crawl] <sofa> (1)
+[Find] <television> (1)
+[SwitchOn] <television> (1)

@@ -1,0 +1,265 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Browse_internet_66 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_chair_1_Done;
+	property:HasState entity:Sit_chair_1_Done;
+	property:HasState entity:Find_mouse_1_Done;
+	property:HasState entity:Grab_mouse_1_Done;
+	property:HasState entity:Find_computer_1_Done;
+	property:HasState entity:SwitchOn_computer_1_Done;
+	property:HasState entity:TurnTo_computer_1_Done;
+	property:HasState entity:LookAt_computer_1_Done;
+	property:HasState entity:InitialState_Browse_internet_66;
+	property:HasState entity:FinalState_Browse_internet_66;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:Find_chair_1;
+	property:HasAction entity:Sit_chair_1;
+	property:HasAction entity:Find_mouse_1;
+	property:HasAction entity:Grab_mouse_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:SwitchOn_computer_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:LookAt_computer_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_chair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasAction entity:Find_chair_1 .
+entity:Sit_chair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasAction entity:Sit_chair_1 .
+entity:Find_mouse_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasAction entity:Find_mouse_1 .
+entity:Grab_mouse_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1 AND IsGrab_mouse_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasAction entity:Grab_mouse_1 .
+entity:Find_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1 AND IsGrab_mouse_1 == 1 AND IsFind_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasAction entity:Find_computer_1 .
+entity:SwitchOn_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1 AND IsGrab_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSwitchOn_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasAction entity:SwitchOn_computer_1 .
+entity:TurnTo_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1 AND IsGrab_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsTurnTo_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasAction entity:TurnTo_computer_1 .
+entity:LookAt_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1 AND IsGrab_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:InitialState_Browse_internet_66 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 0 AND IsSit_chair_1 == 0 AND IsFind_mouse_1 == 0 AND IsGrab_mouse_1 == 0 AND IsFind_computer_1 == 0 AND IsSwitchOn_computer_1 == 0 AND IsTurnTo_computer_1 == 0 AND IsLookAt_computer_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:Find_chair_1;
+	property:HasAction entity:Sit_chair_1;
+	property:HasAction entity:Find_mouse_1;
+	property:HasAction entity:Grab_mouse_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:SwitchOn_computer_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:FinalState_Browse_internet_66 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_chair_1 == 1 AND IsSit_chair_1 == 1 AND IsFind_mouse_1 == 1 AND IsGrab_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSwitchOn_computer_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsLookAt_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1;
+	property:HasAction entity:LookAt_computer_1 .
+entity:IsFind_chair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSit_chair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_mouse_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_mouse_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLookAt_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_chair_1;
+	property:HasObservationFeature entity:IsSit_chair_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsLookAt_computer_1 .
+entity:SetFind_chair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_chair_1 .
+entity:SetSit_chair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSit_chair_1 .
+entity:SetFind_mouse_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_mouse_1 .
+entity:SetGrab_mouse_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_mouse_1 .
+entity:SetFind_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_computer_1 .
+entity:SetSwitchOn_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_computer_1 .
+entity:SetTurnTo_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_computer_1 .
+entity:SetLookAt_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLookAt_computer_1 .
+entity:Find_chair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_chair_1 .
+entity:Sit_chair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSit_chair_1 .
+entity:Find_mouse_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_mouse_1 .
+entity:Grab_mouse_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_mouse_1 .
+entity:Find_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_computer_1 .
+entity:SwitchOn_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_computer_1 .
+entity:TurnTo_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_computer_1 .
+entity:LookAt_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLookAt_computer_1 .

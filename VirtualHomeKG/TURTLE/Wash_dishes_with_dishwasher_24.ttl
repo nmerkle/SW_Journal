@@ -1,0 +1,524 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Wash_dishes_with_dishwasher_24 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_kitchen_1_Done;
+	property:HasState entity:Walk_faucet_1_Done;
+	property:HasState entity:Find_faucet_1_Done;
+	property:HasState entity:SwitchOn_faucet_1_Done;
+	property:HasState entity:Find_dishwasher_1_Done;
+	property:HasState entity:Open_dishwasher_1_Done;
+	property:HasState entity:Find_drinking_glass_1_Done;
+	property:HasState entity:Grab_drinking_glass_1_Done;
+	property:HasState entity:Find_paper_towel_1_Done;
+	property:HasState entity:Grab_paper_towel_1_Done;
+	property:HasState entity:Wipe_drinking_glass_1_Done;
+	property:HasState entity:Rinse_drinking_glass_1_Done;
+	property:HasState entity:PutBack_drinking_glass_1_To_dishwasher_1_Done;
+	property:HasState entity:Close_dishwasher_1_Done;
+	property:HasState entity:SwitchOn_dishwasher_1_Done;
+	property:HasState entity:InitialState_Wash_dishes_with_dishwasher_24;
+	property:HasState entity:FinalState_Wash_dishes_with_dishwasher_24;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasObservationFeature entity:IsClose_dishwasher_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:Walk_kitchen_1;
+	property:HasAction entity:Walk_faucet_1;
+	property:HasAction entity:Find_faucet_1;
+	property:HasAction entity:SwitchOn_faucet_1;
+	property:HasAction entity:Find_dishwasher_1;
+	property:HasAction entity:Open_dishwasher_1;
+	property:HasAction entity:Find_drinking_glass_1;
+	property:HasAction entity:Grab_drinking_glass_1;
+	property:HasAction entity:Find_paper_towel_1;
+	property:HasAction entity:Grab_paper_towel_1;
+	property:HasAction entity:Wipe_drinking_glass_1;
+	property:HasAction entity:Rinse_drinking_glass_1;
+	property:HasAction entity:PutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasAction entity:Close_dishwasher_1;
+	property:HasAction entity:SwitchOn_dishwasher_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_kitchen_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasAction entity:Walk_kitchen_1 .
+entity:Walk_faucet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasAction entity:Walk_faucet_1 .
+entity:Find_faucet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasAction entity:Find_faucet_1 .
+entity:SwitchOn_faucet_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasAction entity:SwitchOn_faucet_1 .
+entity:Find_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasAction entity:Find_dishwasher_1 .
+entity:Open_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasAction entity:Open_dishwasher_1 .
+entity:Find_drinking_glass_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasAction entity:Find_drinking_glass_1 .
+entity:Grab_drinking_glass_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasAction entity:Grab_drinking_glass_1 .
+entity:Find_paper_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasAction entity:Find_paper_towel_1 .
+entity:Grab_paper_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasAction entity:Grab_paper_towel_1 .
+entity:Wipe_drinking_glass_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1 AND IsWipe_drinking_glass_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasAction entity:Wipe_drinking_glass_1 .
+entity:Rinse_drinking_glass_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1 AND IsWipe_drinking_glass_1 == 1 AND IsRinse_drinking_glass_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasAction entity:Rinse_drinking_glass_1 .
+entity:PutBack_drinking_glass_1_To_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1 AND IsWipe_drinking_glass_1 == 1 AND IsRinse_drinking_glass_1 == 1 AND IsPutBack_drinking_glass_1_To_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasAction entity:PutBack_drinking_glass_1_To_dishwasher_1 .
+entity:Close_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1 AND IsWipe_drinking_glass_1 == 1 AND IsRinse_drinking_glass_1 == 1 AND IsPutBack_drinking_glass_1_To_dishwasher_1 == 1 AND IsClose_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasObservationFeature entity:IsClose_dishwasher_1;
+	property:HasAction entity:Close_dishwasher_1 .
+entity:SwitchOn_dishwasher_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1 AND IsWipe_drinking_glass_1 == 1 AND IsRinse_drinking_glass_1 == 1 AND IsPutBack_drinking_glass_1_To_dishwasher_1 == 1 AND IsClose_dishwasher_1 == 1 AND IsSwitchOn_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasObservationFeature entity:IsClose_dishwasher_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:SwitchOn_dishwasher_1 .
+entity:InitialState_Wash_dishes_with_dishwasher_24 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 0 AND IsWalk_faucet_1 == 0 AND IsFind_faucet_1 == 0 AND IsSwitchOn_faucet_1 == 0 AND IsFind_dishwasher_1 == 0 AND IsOpen_dishwasher_1 == 0 AND IsFind_drinking_glass_1 == 0 AND IsGrab_drinking_glass_1 == 0 AND IsFind_paper_towel_1 == 0 AND IsGrab_paper_towel_1 == 0 AND IsWipe_drinking_glass_1 == 0 AND IsRinse_drinking_glass_1 == 0 AND IsPutBack_drinking_glass_1_To_dishwasher_1 == 0 AND IsClose_dishwasher_1 == 0 AND IsSwitchOn_dishwasher_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasObservationFeature entity:IsClose_dishwasher_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:Walk_kitchen_1;
+	property:HasAction entity:Walk_faucet_1;
+	property:HasAction entity:Find_faucet_1;
+	property:HasAction entity:SwitchOn_faucet_1;
+	property:HasAction entity:Find_dishwasher_1;
+	property:HasAction entity:Open_dishwasher_1;
+	property:HasAction entity:Find_drinking_glass_1;
+	property:HasAction entity:Grab_drinking_glass_1;
+	property:HasAction entity:Find_paper_towel_1;
+	property:HasAction entity:Grab_paper_towel_1;
+	property:HasAction entity:Wipe_drinking_glass_1;
+	property:HasAction entity:Rinse_drinking_glass_1;
+	property:HasAction entity:PutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasAction entity:Close_dishwasher_1;
+	property:HasAction entity:SwitchOn_dishwasher_1 .
+entity:FinalState_Wash_dishes_with_dishwasher_24 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_faucet_1 == 1 AND IsFind_faucet_1 == 1 AND IsSwitchOn_faucet_1 == 1 AND IsFind_dishwasher_1 == 1 AND IsOpen_dishwasher_1 == 1 AND IsFind_drinking_glass_1 == 1 AND IsGrab_drinking_glass_1 == 1 AND IsFind_paper_towel_1 == 1 AND IsGrab_paper_towel_1 == 1 AND IsWipe_drinking_glass_1 == 1 AND IsRinse_drinking_glass_1 == 1 AND IsPutBack_drinking_glass_1_To_dishwasher_1 == 1 AND IsClose_dishwasher_1 == 1 AND IsSwitchOn_dishwasher_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasObservationFeature entity:IsClose_dishwasher_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1;
+	property:HasAction entity:SwitchOn_dishwasher_1 .
+entity:IsWalk_kitchen_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_faucet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_faucet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_faucet_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsOpen_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_drinking_glass_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_drinking_glass_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_paper_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_paper_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWipe_drinking_glass_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_drinking_glass_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_drinking_glass_1_To_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsClose_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_dishwasher_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_faucet_1;
+	property:HasObservationFeature entity:IsFind_faucet_1;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1;
+	property:HasObservationFeature entity:IsFind_dishwasher_1;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1;
+	property:HasObservationFeature entity:IsFind_paper_towel_1;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1;
+	property:HasObservationFeature entity:IsClose_dishwasher_1;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1 .
+entity:SetWalk_kitchen_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_1 .
+entity:SetWalk_faucet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_faucet_1 .
+entity:SetFind_faucet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_faucet_1 .
+entity:SetSwitchOn_faucet_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_faucet_1 .
+entity:SetFind_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_dishwasher_1 .
+entity:SetOpen_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsOpen_dishwasher_1 .
+entity:SetFind_drinking_glass_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_drinking_glass_1 .
+entity:SetGrab_drinking_glass_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_drinking_glass_1 .
+entity:SetFind_paper_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_paper_towel_1 .
+entity:SetGrab_paper_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_paper_towel_1 .
+entity:SetWipe_drinking_glass_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWipe_drinking_glass_1 .
+entity:SetRinse_drinking_glass_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_drinking_glass_1 .
+entity:SetPutBack_drinking_glass_1_To_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_drinking_glass_1_To_dishwasher_1 .
+entity:SetClose_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsClose_dishwasher_1 .
+entity:SetSwitchOn_dishwasher_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_dishwasher_1 .
+entity:Walk_kitchen_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_kitchen_1 .
+entity:Walk_faucet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_faucet_1 .
+entity:Find_faucet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_faucet_1 .
+entity:SwitchOn_faucet_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_faucet_1 .
+entity:Find_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_dishwasher_1 .
+entity:Open_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetOpen_dishwasher_1 .
+entity:Find_drinking_glass_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_drinking_glass_1 .
+entity:Grab_drinking_glass_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_drinking_glass_1 .
+entity:Find_paper_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_paper_towel_1 .
+entity:Grab_paper_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_paper_towel_1 .
+entity:Wipe_drinking_glass_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWipe_drinking_glass_1 .
+entity:Rinse_drinking_glass_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_drinking_glass_1 .
+entity:PutBack_drinking_glass_1_To_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_drinking_glass_1_To_dishwasher_1 .
+entity:Close_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetClose_dishwasher_1 .
+entity:SwitchOn_dishwasher_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_dishwasher_1 .

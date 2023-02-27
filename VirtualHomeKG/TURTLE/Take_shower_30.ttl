@@ -1,0 +1,370 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Take_shower_30 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_shower_1_Done;
+	property:HasState entity:Enter_shower_1_Done;
+	property:HasState entity:Find_soap_1_Done;
+	property:HasState entity:Grab_soap_1_Done;
+	property:HasState entity:Find_arms_both_1_Done;
+	property:HasState entity:Scrub_arms_both_1_Done;
+	property:HasState entity:Find_hair_1_Done;
+	property:HasState entity:Wash_hair_1_Done;
+	property:HasState entity:Rinse_hair_1_Done;
+	property:HasState entity:Rinse_arms_both_1_Done;
+	property:HasState entity:Leave_shower_1_Done;
+	property:HasState entity:InitialState_Take_shower_30;
+	property:HasState entity:FinalState_Take_shower_30;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasObservationFeature entity:IsRinse_arms_both_1;
+	property:HasObservationFeature entity:IsLeave_shower_1;
+	property:HasAction entity:Find_shower_1;
+	property:HasAction entity:Enter_shower_1;
+	property:HasAction entity:Find_soap_1;
+	property:HasAction entity:Grab_soap_1;
+	property:HasAction entity:Find_arms_both_1;
+	property:HasAction entity:Scrub_arms_both_1;
+	property:HasAction entity:Find_hair_1;
+	property:HasAction entity:Wash_hair_1;
+	property:HasAction entity:Rinse_hair_1;
+	property:HasAction entity:Rinse_arms_both_1;
+	property:HasAction entity:Leave_shower_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasAction entity:Find_shower_1 .
+entity:Enter_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasAction entity:Enter_shower_1 .
+entity:Find_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasAction entity:Find_soap_1 .
+entity:Grab_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasAction entity:Grab_soap_1 .
+entity:Find_arms_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasAction entity:Find_arms_both_1 .
+entity:Scrub_arms_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasAction entity:Scrub_arms_both_1 .
+entity:Find_hair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1 AND IsFind_hair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasAction entity:Find_hair_1 .
+entity:Wash_hair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1 AND IsFind_hair_1 == 1 AND IsWash_hair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasAction entity:Wash_hair_1 .
+entity:Rinse_hair_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1 AND IsFind_hair_1 == 1 AND IsWash_hair_1 == 1 AND IsRinse_hair_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasAction entity:Rinse_hair_1 .
+entity:Rinse_arms_both_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1 AND IsFind_hair_1 == 1 AND IsWash_hair_1 == 1 AND IsRinse_hair_1 == 1 AND IsRinse_arms_both_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasObservationFeature entity:IsRinse_arms_both_1;
+	property:HasAction entity:Rinse_arms_both_1 .
+entity:Leave_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1 AND IsFind_hair_1 == 1 AND IsWash_hair_1 == 1 AND IsRinse_hair_1 == 1 AND IsRinse_arms_both_1 == 1 AND IsLeave_shower_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasObservationFeature entity:IsRinse_arms_both_1;
+	property:HasObservationFeature entity:IsLeave_shower_1;
+	property:HasAction entity:Leave_shower_1 .
+entity:InitialState_Take_shower_30 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 0 AND IsEnter_shower_1 == 0 AND IsFind_soap_1 == 0 AND IsGrab_soap_1 == 0 AND IsFind_arms_both_1 == 0 AND IsScrub_arms_both_1 == 0 AND IsFind_hair_1 == 0 AND IsWash_hair_1 == 0 AND IsRinse_hair_1 == 0 AND IsRinse_arms_both_1 == 0 AND IsLeave_shower_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasObservationFeature entity:IsRinse_arms_both_1;
+	property:HasObservationFeature entity:IsLeave_shower_1;
+	property:HasAction entity:Find_shower_1;
+	property:HasAction entity:Enter_shower_1;
+	property:HasAction entity:Find_soap_1;
+	property:HasAction entity:Grab_soap_1;
+	property:HasAction entity:Find_arms_both_1;
+	property:HasAction entity:Scrub_arms_both_1;
+	property:HasAction entity:Find_hair_1;
+	property:HasAction entity:Wash_hair_1;
+	property:HasAction entity:Rinse_hair_1;
+	property:HasAction entity:Rinse_arms_both_1;
+	property:HasAction entity:Leave_shower_1 .
+entity:FinalState_Take_shower_30 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_soap_1 == 1 AND IsGrab_soap_1 == 1 AND IsFind_arms_both_1 == 1 AND IsScrub_arms_both_1 == 1 AND IsFind_hair_1 == 1 AND IsWash_hair_1 == 1 AND IsRinse_hair_1 == 1 AND IsRinse_arms_both_1 == 1 AND IsLeave_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasObservationFeature entity:IsRinse_arms_both_1;
+	property:HasObservationFeature entity:IsLeave_shower_1;
+	property:HasAction entity:Leave_shower_1 .
+entity:IsFind_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsEnter_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_arms_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsScrub_arms_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_hair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWash_hair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_hair_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_arms_both_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLeave_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_soap_1;
+	property:HasObservationFeature entity:IsGrab_soap_1;
+	property:HasObservationFeature entity:IsFind_arms_both_1;
+	property:HasObservationFeature entity:IsScrub_arms_both_1;
+	property:HasObservationFeature entity:IsFind_hair_1;
+	property:HasObservationFeature entity:IsWash_hair_1;
+	property:HasObservationFeature entity:IsRinse_hair_1;
+	property:HasObservationFeature entity:IsRinse_arms_both_1;
+	property:HasObservationFeature entity:IsLeave_shower_1 .
+entity:SetFind_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_shower_1 .
+entity:SetEnter_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsEnter_shower_1 .
+entity:SetFind_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_soap_1 .
+entity:SetGrab_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_soap_1 .
+entity:SetFind_arms_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_arms_both_1 .
+entity:SetScrub_arms_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsScrub_arms_both_1 .
+entity:SetFind_hair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_hair_1 .
+entity:SetWash_hair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWash_hair_1 .
+entity:SetRinse_hair_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_hair_1 .
+entity:SetRinse_arms_both_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_arms_both_1 .
+entity:SetLeave_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLeave_shower_1 .
+entity:Find_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_shower_1 .
+entity:Enter_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetEnter_shower_1 .
+entity:Find_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_soap_1 .
+entity:Grab_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_soap_1 .
+entity:Find_arms_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_arms_both_1 .
+entity:Scrub_arms_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetScrub_arms_both_1 .
+entity:Find_hair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_hair_1 .
+entity:Wash_hair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWash_hair_1 .
+entity:Rinse_hair_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_hair_1 .
+entity:Rinse_arms_both_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_arms_both_1 .
+entity:Leave_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLeave_shower_1 .

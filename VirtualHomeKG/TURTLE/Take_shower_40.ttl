@@ -1,0 +1,562 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Take_shower_40 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_shower_1_Done;
+	property:HasState entity:Enter_shower_1_Done;
+	property:HasState entity:Find_curtain_1_Done;
+	property:HasState entity:Close_curtain_1_Done;
+	property:HasState entity:Find_water_1_Done;
+	property:HasState entity:Find_towel_1_Done;
+	property:HasState entity:Grab_towel_1_Done;
+	property:HasState entity:Drop_towel_1_Done;
+	property:HasState entity:Find_facial_cleanser_1_Done;
+	property:HasState entity:Grab_facial_cleanser_1_Done;
+	property:HasState entity:Grab_facial_cleanser_1_Done;
+	property:HasState entity:Rinse_water_1_Done;
+	property:HasState entity:Find_face_soap_1_Done;
+	property:HasState entity:Scrub_face_soap_1_Done;
+	property:HasState entity:Rinse_facial_cleanser_1_Done;
+	property:HasState entity:Scrub_facial_cleanser_1_Done;
+	property:HasState entity:InitialState_Take_shower_40;
+	property:HasState entity:FinalState_Take_shower_40;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1;
+	property:HasObservationFeature entity:IsScrub_facial_cleanser_1;
+	property:HasAction entity:Find_shower_1;
+	property:HasAction entity:Enter_shower_1;
+	property:HasAction entity:Find_curtain_1;
+	property:HasAction entity:Close_curtain_1;
+	property:HasAction entity:Find_water_1;
+	property:HasAction entity:Find_towel_1;
+	property:HasAction entity:Grab_towel_1;
+	property:HasAction entity:Drop_towel_1;
+	property:HasAction entity:Find_facial_cleanser_1;
+	property:HasAction entity:Grab_facial_cleanser_1;
+	property:HasAction entity:Grab_facial_cleanser_1;
+	property:HasAction entity:Rinse_water_1;
+	property:HasAction entity:Find_face_soap_1;
+	property:HasAction entity:Scrub_face_soap_1;
+	property:HasAction entity:Rinse_facial_cleanser_1;
+	property:HasAction entity:Scrub_facial_cleanser_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasAction entity:Find_shower_1 .
+entity:Enter_shower_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasAction entity:Enter_shower_1 .
+entity:Find_curtain_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasAction entity:Find_curtain_1 .
+entity:Close_curtain_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasAction entity:Close_curtain_1 .
+entity:Find_water_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasAction entity:Find_water_1 .
+entity:Find_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasAction entity:Find_towel_1 .
+entity:Grab_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasAction entity:Grab_towel_1 .
+entity:Drop_towel_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasAction entity:Drop_towel_1 .
+entity:Find_facial_cleanser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasAction entity:Find_facial_cleanser_1 .
+entity:Grab_facial_cleanser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasAction entity:Grab_facial_cleanser_1 .
+entity:Grab_facial_cleanser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasAction entity:Grab_facial_cleanser_1 .
+entity:Rinse_water_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsRinse_water_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasAction entity:Rinse_water_1 .
+entity:Find_face_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsRinse_water_1 == 1 AND IsFind_face_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasAction entity:Find_face_soap_1 .
+entity:Scrub_face_soap_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsRinse_water_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasAction entity:Scrub_face_soap_1 .
+entity:Rinse_facial_cleanser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsRinse_water_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_facial_cleanser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1;
+	property:HasAction entity:Rinse_facial_cleanser_1 .
+entity:Scrub_facial_cleanser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsRinse_water_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_facial_cleanser_1 == 1 AND IsScrub_facial_cleanser_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1;
+	property:HasObservationFeature entity:IsScrub_facial_cleanser_1;
+	property:HasAction entity:Scrub_facial_cleanser_1 .
+entity:InitialState_Take_shower_40 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 0 AND IsEnter_shower_1 == 0 AND IsFind_curtain_1 == 0 AND IsClose_curtain_1 == 0 AND IsFind_water_1 == 0 AND IsFind_towel_1 == 0 AND IsGrab_towel_1 == 0 AND IsDrop_towel_1 == 0 AND IsFind_facial_cleanser_1 == 0 AND IsGrab_facial_cleanser_1 == 0 AND IsGrab_facial_cleanser_1 == 0 AND IsRinse_water_1 == 0 AND IsFind_face_soap_1 == 0 AND IsScrub_face_soap_1 == 0 AND IsRinse_facial_cleanser_1 == 0 AND IsScrub_facial_cleanser_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1;
+	property:HasObservationFeature entity:IsScrub_facial_cleanser_1;
+	property:HasAction entity:Find_shower_1;
+	property:HasAction entity:Enter_shower_1;
+	property:HasAction entity:Find_curtain_1;
+	property:HasAction entity:Close_curtain_1;
+	property:HasAction entity:Find_water_1;
+	property:HasAction entity:Find_towel_1;
+	property:HasAction entity:Grab_towel_1;
+	property:HasAction entity:Drop_towel_1;
+	property:HasAction entity:Find_facial_cleanser_1;
+	property:HasAction entity:Grab_facial_cleanser_1;
+	property:HasAction entity:Grab_facial_cleanser_1;
+	property:HasAction entity:Rinse_water_1;
+	property:HasAction entity:Find_face_soap_1;
+	property:HasAction entity:Scrub_face_soap_1;
+	property:HasAction entity:Rinse_facial_cleanser_1;
+	property:HasAction entity:Scrub_facial_cleanser_1 .
+entity:FinalState_Take_shower_40 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_shower_1 == 1 AND IsEnter_shower_1 == 1 AND IsFind_curtain_1 == 1 AND IsClose_curtain_1 == 1 AND IsFind_water_1 == 1 AND IsFind_towel_1 == 1 AND IsGrab_towel_1 == 1 AND IsDrop_towel_1 == 1 AND IsFind_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsGrab_facial_cleanser_1 == 1 AND IsRinse_water_1 == 1 AND IsFind_face_soap_1 == 1 AND IsScrub_face_soap_1 == 1 AND IsRinse_facial_cleanser_1 == 1 AND IsScrub_facial_cleanser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1;
+	property:HasObservationFeature entity:IsScrub_facial_cleanser_1;
+	property:HasAction entity:Scrub_facial_cleanser_1 .
+entity:IsFind_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsEnter_shower_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_curtain_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsClose_curtain_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_water_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsDrop_towel_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_facial_cleanser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_facial_cleanser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_facial_cleanser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_water_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_face_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsScrub_face_soap_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRinse_facial_cleanser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsScrub_facial_cleanser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_shower_1;
+	property:HasObservationFeature entity:IsEnter_shower_1;
+	property:HasObservationFeature entity:IsFind_curtain_1;
+	property:HasObservationFeature entity:IsClose_curtain_1;
+	property:HasObservationFeature entity:IsFind_water_1;
+	property:HasObservationFeature entity:IsFind_towel_1;
+	property:HasObservationFeature entity:IsGrab_towel_1;
+	property:HasObservationFeature entity:IsDrop_towel_1;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1;
+	property:HasObservationFeature entity:IsRinse_water_1;
+	property:HasObservationFeature entity:IsFind_face_soap_1;
+	property:HasObservationFeature entity:IsScrub_face_soap_1;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1;
+	property:HasObservationFeature entity:IsScrub_facial_cleanser_1 .
+entity:SetFind_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_shower_1 .
+entity:SetEnter_shower_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsEnter_shower_1 .
+entity:SetFind_curtain_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_curtain_1 .
+entity:SetClose_curtain_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsClose_curtain_1 .
+entity:SetFind_water_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_water_1 .
+entity:SetFind_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_towel_1 .
+entity:SetGrab_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_towel_1 .
+entity:SetDrop_towel_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsDrop_towel_1 .
+entity:SetFind_facial_cleanser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_facial_cleanser_1 .
+entity:SetGrab_facial_cleanser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_facial_cleanser_1 .
+entity:SetRinse_water_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_water_1 .
+entity:SetFind_face_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_face_soap_1 .
+entity:SetScrub_face_soap_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsScrub_face_soap_1 .
+entity:SetRinse_facial_cleanser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRinse_facial_cleanser_1 .
+entity:SetScrub_facial_cleanser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsScrub_facial_cleanser_1 .
+entity:Find_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_shower_1 .
+entity:Enter_shower_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetEnter_shower_1 .
+entity:Find_curtain_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_curtain_1 .
+entity:Close_curtain_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetClose_curtain_1 .
+entity:Find_water_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_water_1 .
+entity:Find_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_towel_1 .
+entity:Grab_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_towel_1 .
+entity:Drop_towel_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetDrop_towel_1 .
+entity:Find_facial_cleanser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_facial_cleanser_1 .
+entity:Grab_facial_cleanser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_facial_cleanser_1 .
+entity:Grab_facial_cleanser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_facial_cleanser_1 .
+entity:Rinse_water_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_water_1 .
+entity:Find_face_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_face_soap_1 .
+entity:Scrub_face_soap_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetScrub_face_soap_1 .
+entity:Rinse_facial_cleanser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRinse_facial_cleanser_1 .
+entity:Scrub_facial_cleanser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetScrub_facial_cleanser_1 .

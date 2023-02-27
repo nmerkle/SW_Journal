@@ -1,0 +1,1082 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Go_to_sleep_25 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_bedroom_1_Done;
+	property:HasState entity:Walk_dresser_1_Done;
+	property:HasState entity:Find_clothes_pants_1_Done;
+	property:HasState entity:Grab_clothes_pants_1_Done;
+	property:HasState entity:Drop_clothes_pants_1_Done;
+	property:HasState entity:Find_clothes_shirt_1_Done;
+	property:HasState entity:Grab_clothes_shirt_1_Done;
+	property:HasState entity:Drop_clothes_shirt_1_Done;
+	property:HasState entity:Open_dresser_1_Done;
+	property:HasState entity:Find_pajamas_1_Done;
+	property:HasState entity:Grab_pajamas_1_Done;
+	property:HasState entity:Close_dresser_1_Done;
+	property:HasState entity:PutOn_pajamas_1_Done;
+	property:HasState entity:Find_blanket_1_Done;
+	property:HasState entity:Grab_blanket_1_Done;
+	property:HasState entity:Unfold_blanket_1_Done;
+	property:HasState entity:Walk_bed_1_Done;
+	property:HasState entity:PutBack_blanket_1_To_bed_1_Done;
+	property:HasState entity:Find_pillow_1_Done;
+	property:HasState entity:Grab_pillow_1_Done;
+	property:HasState entity:PutBack_pillow_1_To_bed_1_Done;
+	property:HasState entity:Find_light_1_Done;
+	property:HasState entity:SwitchOff_light_1_Done;
+	property:HasState entity:Climb_bed_1_Done;
+	property:HasState entity:Lie_bed_1_Done;
+	property:HasState entity:Wrap_pajamas_1_To_blanket_1_Done;
+	property:HasState entity:Sleep_Done;
+	property:HasState entity:InitialState_Go_to_sleep_25;
+	property:HasState entity:FinalState_Go_to_sleep_25;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1;
+	property:HasObservationFeature entity:IsSleep;
+	property:HasAction entity:Walk_bedroom_1;
+	property:HasAction entity:Walk_dresser_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Grab_clothes_pants_1;
+	property:HasAction entity:Drop_clothes_pants_1;
+	property:HasAction entity:Find_clothes_shirt_1;
+	property:HasAction entity:Grab_clothes_shirt_1;
+	property:HasAction entity:Drop_clothes_shirt_1;
+	property:HasAction entity:Open_dresser_1;
+	property:HasAction entity:Find_pajamas_1;
+	property:HasAction entity:Grab_pajamas_1;
+	property:HasAction entity:Close_dresser_1;
+	property:HasAction entity:PutOn_pajamas_1;
+	property:HasAction entity:Find_blanket_1;
+	property:HasAction entity:Grab_blanket_1;
+	property:HasAction entity:Unfold_blanket_1;
+	property:HasAction entity:Walk_bed_1;
+	property:HasAction entity:PutBack_blanket_1_To_bed_1;
+	property:HasAction entity:Find_pillow_1;
+	property:HasAction entity:Grab_pillow_1;
+	property:HasAction entity:PutBack_pillow_1_To_bed_1;
+	property:HasAction entity:Find_light_1;
+	property:HasAction entity:SwitchOff_light_1;
+	property:HasAction entity:Climb_bed_1;
+	property:HasAction entity:Lie_bed_1;
+	property:HasAction entity:Wrap_pajamas_1_To_blanket_1;
+	property:HasAction entity:Sleep;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_bedroom_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasAction entity:Walk_bedroom_1 .
+entity:Walk_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasAction entity:Walk_dresser_1 .
+entity:Find_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1 .
+entity:Grab_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasAction entity:Grab_clothes_pants_1 .
+entity:Drop_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasAction entity:Drop_clothes_pants_1 .
+entity:Find_clothes_shirt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasAction entity:Find_clothes_shirt_1 .
+entity:Grab_clothes_shirt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasAction entity:Grab_clothes_shirt_1 .
+entity:Drop_clothes_shirt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasAction entity:Drop_clothes_shirt_1 .
+entity:Open_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasAction entity:Open_dresser_1 .
+entity:Find_pajamas_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasAction entity:Find_pajamas_1 .
+entity:Grab_pajamas_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasAction entity:Grab_pajamas_1 .
+entity:Close_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasAction entity:Close_dresser_1 .
+entity:PutOn_pajamas_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasAction entity:PutOn_pajamas_1 .
+entity:Find_blanket_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasAction entity:Find_blanket_1 .
+entity:Grab_blanket_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasAction entity:Grab_blanket_1 .
+entity:Unfold_blanket_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasAction entity:Unfold_blanket_1 .
+entity:Walk_bed_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasAction entity:Walk_bed_1 .
+entity:PutBack_blanket_1_To_bed_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasAction entity:PutBack_blanket_1_To_bed_1 .
+entity:Find_pillow_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasAction entity:Find_pillow_1 .
+entity:Grab_pillow_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasAction entity:Grab_pillow_1 .
+entity:PutBack_pillow_1_To_bed_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasAction entity:PutBack_pillow_1_To_bed_1 .
+entity:Find_light_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasAction entity:Find_light_1 .
+entity:SwitchOff_light_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasAction entity:SwitchOff_light_1 .
+entity:Climb_bed_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1 AND IsClimb_bed_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasAction entity:Climb_bed_1 .
+entity:Lie_bed_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1 AND IsClimb_bed_1 == 1 AND IsLie_bed_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasAction entity:Lie_bed_1 .
+entity:Wrap_pajamas_1_To_blanket_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1 AND IsClimb_bed_1 == 1 AND IsLie_bed_1 == 1 AND IsWrap_pajamas_1_To_blanket_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1;
+	property:HasAction entity:Wrap_pajamas_1_To_blanket_1 .
+entity:Sleep_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1 AND IsClimb_bed_1 == 1 AND IsLie_bed_1 == 1 AND IsWrap_pajamas_1_To_blanket_1 == 1 AND IsSleep == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1;
+	property:HasObservationFeature entity:IsSleep;
+	property:HasAction entity:Sleep .
+entity:InitialState_Go_to_sleep_25 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 0 AND IsWalk_dresser_1 == 0 AND IsFind_clothes_pants_1 == 0 AND IsGrab_clothes_pants_1 == 0 AND IsDrop_clothes_pants_1 == 0 AND IsFind_clothes_shirt_1 == 0 AND IsGrab_clothes_shirt_1 == 0 AND IsDrop_clothes_shirt_1 == 0 AND IsOpen_dresser_1 == 0 AND IsFind_pajamas_1 == 0 AND IsGrab_pajamas_1 == 0 AND IsClose_dresser_1 == 0 AND IsPutOn_pajamas_1 == 0 AND IsFind_blanket_1 == 0 AND IsGrab_blanket_1 == 0 AND IsUnfold_blanket_1 == 0 AND IsWalk_bed_1 == 0 AND IsPutBack_blanket_1_To_bed_1 == 0 AND IsFind_pillow_1 == 0 AND IsGrab_pillow_1 == 0 AND IsPutBack_pillow_1_To_bed_1 == 0 AND IsFind_light_1 == 0 AND IsSwitchOff_light_1 == 0 AND IsClimb_bed_1 == 0 AND IsLie_bed_1 == 0 AND IsWrap_pajamas_1_To_blanket_1 == 0 AND IsSleep == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1;
+	property:HasObservationFeature entity:IsSleep;
+	property:HasAction entity:Walk_bedroom_1;
+	property:HasAction entity:Walk_dresser_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Grab_clothes_pants_1;
+	property:HasAction entity:Drop_clothes_pants_1;
+	property:HasAction entity:Find_clothes_shirt_1;
+	property:HasAction entity:Grab_clothes_shirt_1;
+	property:HasAction entity:Drop_clothes_shirt_1;
+	property:HasAction entity:Open_dresser_1;
+	property:HasAction entity:Find_pajamas_1;
+	property:HasAction entity:Grab_pajamas_1;
+	property:HasAction entity:Close_dresser_1;
+	property:HasAction entity:PutOn_pajamas_1;
+	property:HasAction entity:Find_blanket_1;
+	property:HasAction entity:Grab_blanket_1;
+	property:HasAction entity:Unfold_blanket_1;
+	property:HasAction entity:Walk_bed_1;
+	property:HasAction entity:PutBack_blanket_1_To_bed_1;
+	property:HasAction entity:Find_pillow_1;
+	property:HasAction entity:Grab_pillow_1;
+	property:HasAction entity:PutBack_pillow_1_To_bed_1;
+	property:HasAction entity:Find_light_1;
+	property:HasAction entity:SwitchOff_light_1;
+	property:HasAction entity:Climb_bed_1;
+	property:HasAction entity:Lie_bed_1;
+	property:HasAction entity:Wrap_pajamas_1_To_blanket_1;
+	property:HasAction entity:Sleep .
+entity:FinalState_Go_to_sleep_25 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_bedroom_1 == 1 AND IsWalk_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsDrop_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsDrop_clothes_shirt_1 == 1 AND IsOpen_dresser_1 == 1 AND IsFind_pajamas_1 == 1 AND IsGrab_pajamas_1 == 1 AND IsClose_dresser_1 == 1 AND IsPutOn_pajamas_1 == 1 AND IsFind_blanket_1 == 1 AND IsGrab_blanket_1 == 1 AND IsUnfold_blanket_1 == 1 AND IsWalk_bed_1 == 1 AND IsPutBack_blanket_1_To_bed_1 == 1 AND IsFind_pillow_1 == 1 AND IsGrab_pillow_1 == 1 AND IsPutBack_pillow_1_To_bed_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1 AND IsClimb_bed_1 == 1 AND IsLie_bed_1 == 1 AND IsWrap_pajamas_1_To_blanket_1 == 1 AND IsSleep == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1;
+	property:HasObservationFeature entity:IsSleep;
+	property:HasAction entity:Sleep .
+entity:IsWalk_bedroom_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsDrop_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_shirt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_clothes_shirt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsDrop_clothes_shirt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsOpen_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_pajamas_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_pajamas_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsClose_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutOn_pajamas_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_blanket_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_blanket_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsUnfold_blanket_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_bed_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_blanket_1_To_bed_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_pillow_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_pillow_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_pillow_1_To_bed_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_light_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOff_light_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsClimb_bed_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLie_bed_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWrap_pajamas_1_To_blanket_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSleep a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bedroom_1;
+	property:HasObservationFeature entity:IsWalk_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsFind_pajamas_1;
+	property:HasObservationFeature entity:IsGrab_pajamas_1;
+	property:HasObservationFeature entity:IsClose_dresser_1;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1;
+	property:HasObservationFeature entity:IsFind_blanket_1;
+	property:HasObservationFeature entity:IsGrab_blanket_1;
+	property:HasObservationFeature entity:IsUnfold_blanket_1;
+	property:HasObservationFeature entity:IsWalk_bed_1;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_pillow_1;
+	property:HasObservationFeature entity:IsGrab_pillow_1;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasObservationFeature entity:IsClimb_bed_1;
+	property:HasObservationFeature entity:IsLie_bed_1;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1;
+	property:HasObservationFeature entity:IsSleep .
+entity:SetWalk_bedroom_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bedroom_1 .
+entity:SetWalk_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_dresser_1 .
+entity:SetFind_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1 .
+entity:SetGrab_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1 .
+entity:SetDrop_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsDrop_clothes_pants_1 .
+entity:SetFind_clothes_shirt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1 .
+entity:SetGrab_clothes_shirt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1 .
+entity:SetDrop_clothes_shirt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsDrop_clothes_shirt_1 .
+entity:SetOpen_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsOpen_dresser_1 .
+entity:SetFind_pajamas_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_pajamas_1 .
+entity:SetGrab_pajamas_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_pajamas_1 .
+entity:SetClose_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsClose_dresser_1 .
+entity:SetPutOn_pajamas_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutOn_pajamas_1 .
+entity:SetFind_blanket_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_blanket_1 .
+entity:SetGrab_blanket_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_blanket_1 .
+entity:SetUnfold_blanket_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsUnfold_blanket_1 .
+entity:SetWalk_bed_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_bed_1 .
+entity:SetPutBack_blanket_1_To_bed_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_blanket_1_To_bed_1 .
+entity:SetFind_pillow_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_pillow_1 .
+entity:SetGrab_pillow_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_pillow_1 .
+entity:SetPutBack_pillow_1_To_bed_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_pillow_1_To_bed_1 .
+entity:SetFind_light_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_light_1 .
+entity:SetSwitchOff_light_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOff_light_1 .
+entity:SetClimb_bed_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsClimb_bed_1 .
+entity:SetLie_bed_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLie_bed_1 .
+entity:SetWrap_pajamas_1_To_blanket_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWrap_pajamas_1_To_blanket_1 .
+entity:SetSleep a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSleep .
+entity:Walk_bedroom_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bedroom_1 .
+entity:Walk_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_dresser_1 .
+entity:Find_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_pants_1 .
+entity:Grab_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_clothes_pants_1 .
+entity:Drop_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetDrop_clothes_pants_1 .
+entity:Find_clothes_shirt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_shirt_1 .
+entity:Grab_clothes_shirt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_clothes_shirt_1 .
+entity:Drop_clothes_shirt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetDrop_clothes_shirt_1 .
+entity:Open_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetOpen_dresser_1 .
+entity:Find_pajamas_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_pajamas_1 .
+entity:Grab_pajamas_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_pajamas_1 .
+entity:Close_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetClose_dresser_1 .
+entity:PutOn_pajamas_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutOn_pajamas_1 .
+entity:Find_blanket_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_blanket_1 .
+entity:Grab_blanket_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_blanket_1 .
+entity:Unfold_blanket_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetUnfold_blanket_1 .
+entity:Walk_bed_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_bed_1 .
+entity:PutBack_blanket_1_To_bed_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_blanket_1_To_bed_1 .
+entity:Find_pillow_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_pillow_1 .
+entity:Grab_pillow_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_pillow_1 .
+entity:PutBack_pillow_1_To_bed_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_pillow_1_To_bed_1 .
+entity:Find_light_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_light_1 .
+entity:SwitchOff_light_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOff_light_1 .
+entity:Climb_bed_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetClimb_bed_1 .
+entity:Lie_bed_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLie_bed_1 .
+entity:Wrap_pajamas_1_To_blanket_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWrap_pajamas_1_To_blanket_1 .
+entity:Sleep a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSleep .

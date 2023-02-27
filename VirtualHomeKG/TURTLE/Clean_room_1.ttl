@@ -1,0 +1,736 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Clean_room_1 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Find_toy_2_Done;
+	property:HasState entity:Find_toy_1_Done;
+	property:HasState entity:Grab_toy_1_Done;
+	property:HasState entity:Grab_toy_2_Done;
+	property:HasState entity:Find_toy_1_Done;
+	property:HasState entity:Find_dresser_1_Done;
+	property:HasState entity:Open_dresser_1_Done;
+	property:HasState entity:PutBack_toy_1_To_dresser_1_Done;
+	property:HasState entity:Find_clothes_pants_1_Done;
+	property:HasState entity:Grab_clothes_pants_1_Done;
+	property:HasState entity:Find_clothes_shirt_1_Done;
+	property:HasState entity:Grab_clothes_shirt_1_Done;
+	property:HasState entity:PutBack_clothes_pants_1_To_dresser_1_Done;
+	property:HasState entity:PutBack_clothes_shirt_1_To_dresser_1_Done;
+	property:HasState entity:Find_television_1_Done;
+	property:HasState entity:SwitchOff_television_1_Done;
+	property:HasState entity:Find_floor_lamp_1_Done;
+	property:HasState entity:SwitchOn_floor_lamp_1_Done;
+	property:HasState entity:Find_light_1_Done;
+	property:HasState entity:SwitchOff_light_1_Done;
+	property:HasState entity:InitialState_Clean_room_1;
+	property:HasState entity:FinalState_Clean_room_1;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasAction entity:Find_toy_2;
+	property:HasAction entity:Find_toy_1;
+	property:HasAction entity:Grab_toy_1;
+	property:HasAction entity:Grab_toy_2;
+	property:HasAction entity:Find_toy_1;
+	property:HasAction entity:Find_dresser_1;
+	property:HasAction entity:Open_dresser_1;
+	property:HasAction entity:PutBack_toy_1_To_dresser_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Grab_clothes_pants_1;
+	property:HasAction entity:Find_clothes_shirt_1;
+	property:HasAction entity:Grab_clothes_shirt_1;
+	property:HasAction entity:PutBack_clothes_pants_1_To_dresser_1;
+	property:HasAction entity:PutBack_clothes_shirt_1_To_dresser_1;
+	property:HasAction entity:Find_television_1;
+	property:HasAction entity:SwitchOff_television_1;
+	property:HasAction entity:Find_floor_lamp_1;
+	property:HasAction entity:SwitchOn_floor_lamp_1;
+	property:HasAction entity:Find_light_1;
+	property:HasAction entity:SwitchOff_light_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Find_toy_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasAction entity:Find_toy_2 .
+entity:Find_toy_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasAction entity:Find_toy_1 .
+entity:Grab_toy_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasAction entity:Grab_toy_1 .
+entity:Grab_toy_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasAction entity:Grab_toy_2 .
+entity:Find_toy_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasAction entity:Find_toy_1 .
+entity:Find_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasAction entity:Find_dresser_1 .
+entity:Open_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasAction entity:Open_dresser_1 .
+entity:PutBack_toy_1_To_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasAction entity:PutBack_toy_1_To_dresser_1 .
+entity:Find_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasAction entity:Find_clothes_pants_1 .
+entity:Grab_clothes_pants_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasAction entity:Grab_clothes_pants_1 .
+entity:Find_clothes_shirt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasAction entity:Find_clothes_shirt_1 .
+entity:Grab_clothes_shirt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasAction entity:Grab_clothes_shirt_1 .
+entity:PutBack_clothes_pants_1_To_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasAction entity:PutBack_clothes_pants_1_To_dresser_1 .
+entity:PutBack_clothes_shirt_1_To_dresser_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasAction entity:PutBack_clothes_shirt_1_To_dresser_1 .
+entity:Find_television_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasAction entity:Find_television_1 .
+entity:SwitchOff_television_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1 AND IsSwitchOff_television_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasAction entity:SwitchOff_television_1 .
+entity:Find_floor_lamp_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1 AND IsSwitchOff_television_1 == 1 AND IsFind_floor_lamp_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasAction entity:Find_floor_lamp_1 .
+entity:SwitchOn_floor_lamp_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1 AND IsSwitchOff_television_1 == 1 AND IsFind_floor_lamp_1 == 1 AND IsSwitchOn_floor_lamp_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasAction entity:SwitchOn_floor_lamp_1 .
+entity:Find_light_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1 AND IsSwitchOff_television_1 == 1 AND IsFind_floor_lamp_1 == 1 AND IsSwitchOn_floor_lamp_1 == 1 AND IsFind_light_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasAction entity:Find_light_1 .
+entity:SwitchOff_light_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1 AND IsSwitchOff_television_1 == 1 AND IsFind_floor_lamp_1 == 1 AND IsSwitchOn_floor_lamp_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasAction entity:SwitchOff_light_1 .
+entity:InitialState_Clean_room_1 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 0 AND IsFind_toy_1 == 0 AND IsGrab_toy_1 == 0 AND IsGrab_toy_2 == 0 AND IsFind_toy_1 == 0 AND IsFind_dresser_1 == 0 AND IsOpen_dresser_1 == 0 AND IsPutBack_toy_1_To_dresser_1 == 0 AND IsFind_clothes_pants_1 == 0 AND IsGrab_clothes_pants_1 == 0 AND IsFind_clothes_shirt_1 == 0 AND IsGrab_clothes_shirt_1 == 0 AND IsPutBack_clothes_pants_1_To_dresser_1 == 0 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 0 AND IsFind_television_1 == 0 AND IsSwitchOff_television_1 == 0 AND IsFind_floor_lamp_1 == 0 AND IsSwitchOn_floor_lamp_1 == 0 AND IsFind_light_1 == 0 AND IsSwitchOff_light_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasAction entity:Find_toy_2;
+	property:HasAction entity:Find_toy_1;
+	property:HasAction entity:Grab_toy_1;
+	property:HasAction entity:Grab_toy_2;
+	property:HasAction entity:Find_toy_1;
+	property:HasAction entity:Find_dresser_1;
+	property:HasAction entity:Open_dresser_1;
+	property:HasAction entity:PutBack_toy_1_To_dresser_1;
+	property:HasAction entity:Find_clothes_pants_1;
+	property:HasAction entity:Grab_clothes_pants_1;
+	property:HasAction entity:Find_clothes_shirt_1;
+	property:HasAction entity:Grab_clothes_shirt_1;
+	property:HasAction entity:PutBack_clothes_pants_1_To_dresser_1;
+	property:HasAction entity:PutBack_clothes_shirt_1_To_dresser_1;
+	property:HasAction entity:Find_television_1;
+	property:HasAction entity:SwitchOff_television_1;
+	property:HasAction entity:Find_floor_lamp_1;
+	property:HasAction entity:SwitchOn_floor_lamp_1;
+	property:HasAction entity:Find_light_1;
+	property:HasAction entity:SwitchOff_light_1 .
+entity:FinalState_Clean_room_1 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsFind_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsGrab_toy_1 == 1 AND IsGrab_toy_2 == 1 AND IsFind_toy_1 == 1 AND IsFind_dresser_1 == 1 AND IsOpen_dresser_1 == 1 AND IsPutBack_toy_1_To_dresser_1 == 1 AND IsFind_clothes_pants_1 == 1 AND IsGrab_clothes_pants_1 == 1 AND IsFind_clothes_shirt_1 == 1 AND IsGrab_clothes_shirt_1 == 1 AND IsPutBack_clothes_pants_1_To_dresser_1 == 1 AND IsPutBack_clothes_shirt_1_To_dresser_1 == 1 AND IsFind_television_1 == 1 AND IsSwitchOff_television_1 == 1 AND IsFind_floor_lamp_1 == 1 AND IsSwitchOn_floor_lamp_1 == 1 AND IsFind_light_1 == 1 AND IsSwitchOff_light_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1;
+	property:HasAction entity:SwitchOff_light_1 .
+entity:IsFind_toy_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_toy_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_toy_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_toy_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_toy_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsOpen_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_toy_1_To_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_clothes_pants_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_clothes_shirt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_clothes_shirt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_clothes_pants_1_To_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_clothes_shirt_1_To_dresser_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_television_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOff_television_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_floor_lamp_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_floor_lamp_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_light_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOff_light_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_1;
+	property:HasObservationFeature entity:IsGrab_toy_2;
+	property:HasObservationFeature entity:IsFind_toy_1;
+	property:HasObservationFeature entity:IsFind_dresser_1;
+	property:HasObservationFeature entity:IsOpen_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1;
+	property:HasObservationFeature entity:IsFind_television_1;
+	property:HasObservationFeature entity:IsSwitchOff_television_1;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1;
+	property:HasObservationFeature entity:IsFind_light_1;
+	property:HasObservationFeature entity:IsSwitchOff_light_1 .
+entity:SetFind_toy_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_toy_2 .
+entity:SetFind_toy_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_toy_1 .
+entity:SetGrab_toy_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_toy_1 .
+entity:SetGrab_toy_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_toy_2 .
+entity:SetFind_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_dresser_1 .
+entity:SetOpen_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsOpen_dresser_1 .
+entity:SetPutBack_toy_1_To_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_toy_1_To_dresser_1 .
+entity:SetFind_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_clothes_pants_1 .
+entity:SetGrab_clothes_pants_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_clothes_pants_1 .
+entity:SetFind_clothes_shirt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_clothes_shirt_1 .
+entity:SetGrab_clothes_shirt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_clothes_shirt_1 .
+entity:SetPutBack_clothes_pants_1_To_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_clothes_pants_1_To_dresser_1 .
+entity:SetPutBack_clothes_shirt_1_To_dresser_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_clothes_shirt_1_To_dresser_1 .
+entity:SetFind_television_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_television_1 .
+entity:SetSwitchOff_television_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOff_television_1 .
+entity:SetFind_floor_lamp_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_floor_lamp_1 .
+entity:SetSwitchOn_floor_lamp_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_floor_lamp_1 .
+entity:SetFind_light_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_light_1 .
+entity:SetSwitchOff_light_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOff_light_1 .
+entity:Find_toy_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_toy_2 .
+entity:Find_toy_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_toy_1 .
+entity:Grab_toy_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_toy_1 .
+entity:Grab_toy_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_toy_2 .
+entity:Find_toy_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_toy_1 .
+entity:Find_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_dresser_1 .
+entity:Open_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetOpen_dresser_1 .
+entity:PutBack_toy_1_To_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_toy_1_To_dresser_1 .
+entity:Find_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_pants_1 .
+entity:Grab_clothes_pants_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_clothes_pants_1 .
+entity:Find_clothes_shirt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_clothes_shirt_1 .
+entity:Grab_clothes_shirt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_clothes_shirt_1 .
+entity:PutBack_clothes_pants_1_To_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_clothes_pants_1_To_dresser_1 .
+entity:PutBack_clothes_shirt_1_To_dresser_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_clothes_shirt_1_To_dresser_1 .
+entity:Find_television_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_television_1 .
+entity:SwitchOff_television_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOff_television_1 .
+entity:Find_floor_lamp_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_floor_lamp_1 .
+entity:SwitchOn_floor_lamp_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_floor_lamp_1 .
+entity:Find_light_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_light_1 .
+entity:SwitchOff_light_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOff_light_1 .

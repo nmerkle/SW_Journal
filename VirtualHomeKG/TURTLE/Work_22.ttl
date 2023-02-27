@@ -1,0 +1,445 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Work_22 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_home_office_1_Done;
+	property:HasState entity:Walk_desk_1_Done;
+	property:HasState entity:Find_desk_1_Done;
+	property:HasState entity:Find_mouse_1_Done;
+	property:HasState entity:PlugIn_mouse_1_Done;
+	property:HasState entity:Find_computer_1_Done;
+	property:HasState entity:Squeeze_computer_1_Done;
+	property:HasState entity:Grab_mouse_1_Done;
+	property:HasState entity:TurnTo_computer_1_Done;
+	property:HasState entity:PointAt_computer_1_Done;
+	property:HasState entity:Find_homework_1_Done;
+	property:HasState entity:Grab_homework_1_Done;
+	property:HasState entity:Read_homework_1_Done;
+	property:HasState entity:InitialState_Work_22;
+	property:HasState entity:FinalState_Work_22;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasObservationFeature entity:IsGrab_homework_1;
+	property:HasObservationFeature entity:IsRead_homework_1;
+	property:HasAction entity:Walk_home_office_1;
+	property:HasAction entity:Walk_desk_1;
+	property:HasAction entity:Find_desk_1;
+	property:HasAction entity:Find_mouse_1;
+	property:HasAction entity:PlugIn_mouse_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:Squeeze_computer_1;
+	property:HasAction entity:Grab_mouse_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:PointAt_computer_1;
+	property:HasAction entity:Find_homework_1;
+	property:HasAction entity:Grab_homework_1;
+	property:HasAction entity:Read_homework_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_home_office_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasAction entity:Walk_home_office_1 .
+entity:Walk_desk_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasAction entity:Walk_desk_1 .
+entity:Find_desk_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasAction entity:Find_desk_1 .
+entity:Find_mouse_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasAction entity:Find_mouse_1 .
+entity:PlugIn_mouse_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasAction entity:PlugIn_mouse_1 .
+entity:Find_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasAction entity:Find_computer_1 .
+entity:Squeeze_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasAction entity:Squeeze_computer_1 .
+entity:Grab_mouse_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasAction entity:Grab_mouse_1 .
+entity:TurnTo_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1 AND IsTurnTo_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasAction entity:TurnTo_computer_1 .
+entity:PointAt_computer_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsPointAt_computer_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasAction entity:PointAt_computer_1 .
+entity:Find_homework_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsPointAt_computer_1 == 1 AND IsFind_homework_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasAction entity:Find_homework_1 .
+entity:Grab_homework_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsPointAt_computer_1 == 1 AND IsFind_homework_1 == 1 AND IsGrab_homework_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasObservationFeature entity:IsGrab_homework_1;
+	property:HasAction entity:Grab_homework_1 .
+entity:Read_homework_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsPointAt_computer_1 == 1 AND IsFind_homework_1 == 1 AND IsGrab_homework_1 == 1 AND IsRead_homework_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasObservationFeature entity:IsGrab_homework_1;
+	property:HasObservationFeature entity:IsRead_homework_1;
+	property:HasAction entity:Read_homework_1 .
+entity:InitialState_Work_22 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 0 AND IsWalk_desk_1 == 0 AND IsFind_desk_1 == 0 AND IsFind_mouse_1 == 0 AND IsPlugIn_mouse_1 == 0 AND IsFind_computer_1 == 0 AND IsSqueeze_computer_1 == 0 AND IsGrab_mouse_1 == 0 AND IsTurnTo_computer_1 == 0 AND IsPointAt_computer_1 == 0 AND IsFind_homework_1 == 0 AND IsGrab_homework_1 == 0 AND IsRead_homework_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasObservationFeature entity:IsGrab_homework_1;
+	property:HasObservationFeature entity:IsRead_homework_1;
+	property:HasAction entity:Walk_home_office_1;
+	property:HasAction entity:Walk_desk_1;
+	property:HasAction entity:Find_desk_1;
+	property:HasAction entity:Find_mouse_1;
+	property:HasAction entity:PlugIn_mouse_1;
+	property:HasAction entity:Find_computer_1;
+	property:HasAction entity:Squeeze_computer_1;
+	property:HasAction entity:Grab_mouse_1;
+	property:HasAction entity:TurnTo_computer_1;
+	property:HasAction entity:PointAt_computer_1;
+	property:HasAction entity:Find_homework_1;
+	property:HasAction entity:Grab_homework_1;
+	property:HasAction entity:Read_homework_1 .
+entity:FinalState_Work_22 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_home_office_1 == 1 AND IsWalk_desk_1 == 1 AND IsFind_desk_1 == 1 AND IsFind_mouse_1 == 1 AND IsPlugIn_mouse_1 == 1 AND IsFind_computer_1 == 1 AND IsSqueeze_computer_1 == 1 AND IsGrab_mouse_1 == 1 AND IsTurnTo_computer_1 == 1 AND IsPointAt_computer_1 == 1 AND IsFind_homework_1 == 1 AND IsGrab_homework_1 == 1 AND IsRead_homework_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasObservationFeature entity:IsGrab_homework_1;
+	property:HasObservationFeature entity:IsRead_homework_1;
+	property:HasAction entity:Read_homework_1 .
+entity:IsWalk_home_office_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_desk_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_desk_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_mouse_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPlugIn_mouse_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSqueeze_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_mouse_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPointAt_computer_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_homework_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_homework_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsRead_homework_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_home_office_1;
+	property:HasObservationFeature entity:IsWalk_desk_1;
+	property:HasObservationFeature entity:IsFind_desk_1;
+	property:HasObservationFeature entity:IsFind_mouse_1;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1;
+	property:HasObservationFeature entity:IsFind_computer_1;
+	property:HasObservationFeature entity:IsSqueeze_computer_1;
+	property:HasObservationFeature entity:IsGrab_mouse_1;
+	property:HasObservationFeature entity:IsTurnTo_computer_1;
+	property:HasObservationFeature entity:IsPointAt_computer_1;
+	property:HasObservationFeature entity:IsFind_homework_1;
+	property:HasObservationFeature entity:IsGrab_homework_1;
+	property:HasObservationFeature entity:IsRead_homework_1 .
+entity:SetWalk_home_office_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_home_office_1 .
+entity:SetWalk_desk_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_desk_1 .
+entity:SetFind_desk_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_desk_1 .
+entity:SetFind_mouse_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_mouse_1 .
+entity:SetPlugIn_mouse_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPlugIn_mouse_1 .
+entity:SetFind_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_computer_1 .
+entity:SetSqueeze_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSqueeze_computer_1 .
+entity:SetGrab_mouse_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_mouse_1 .
+entity:SetTurnTo_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_computer_1 .
+entity:SetPointAt_computer_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPointAt_computer_1 .
+entity:SetFind_homework_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_homework_1 .
+entity:SetGrab_homework_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_homework_1 .
+entity:SetRead_homework_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsRead_homework_1 .
+entity:Walk_home_office_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_home_office_1 .
+entity:Walk_desk_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_desk_1 .
+entity:Find_desk_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_desk_1 .
+entity:Find_mouse_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_mouse_1 .
+entity:PlugIn_mouse_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPlugIn_mouse_1 .
+entity:Find_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_computer_1 .
+entity:Squeeze_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSqueeze_computer_1 .
+entity:Grab_mouse_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_mouse_1 .
+entity:TurnTo_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_computer_1 .
+entity:PointAt_computer_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPointAt_computer_1 .
+entity:Find_homework_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_homework_1 .
+entity:Grab_homework_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_homework_1 .
+entity:Read_homework_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetRead_homework_1 .

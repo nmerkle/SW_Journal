@@ -1,0 +1,970 @@
+@prefix entity: <http://example.org/Entity/> .
+@prefix property: <http://example.org/Property/> .
+@prefix concept: <http://example.org/Concept/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+entity:Cook_some_food_31 a concept:Task;
+	property:HasStatus "OPEN"^^xsd:string;
+	property:IsSequential "true"^^xsd:boolean;
+	property:HasNumberOfActors "1"^^xsd:integer;
+	property:HasCommunicationType "Asynchronized"^^xsd:string;
+	property:HasState entity:Walk_kitchen_1_Done;
+	property:HasState entity:Walk_fryingpan_1_Done;
+	property:HasState entity:Find_fryingpan_1_Done;
+	property:HasState entity:Grab_fryingpan_1_Done;
+	property:HasState entity:Find_stove_1_Done;
+	property:HasState entity:PutBack_fryingpan_1_To_stove_1_Done;
+	property:HasState entity:Find_stove_1_Done;
+	property:HasState entity:SwitchOn_stove_1_Done;
+	property:HasState entity:Find_food_egg_2_Done;
+	property:HasState entity:Find_food_egg_1_Done;
+	property:HasState entity:Grab_food_egg_1_Done;
+	property:HasState entity:Grab_food_egg_2_Done;
+	property:HasState entity:Break_food_egg_2_Done;
+	property:HasState entity:PutBack_food_egg_2_To_stove_1_Done;
+	property:HasState entity:Walk_food_salt_1_Done;
+	property:HasState entity:Find_food_salt_1_Done;
+	property:HasState entity:Grab_food_salt_1_Done;
+	property:HasState entity:Pour_food_salt_1_To_fryingpan_1_Done;
+	property:HasState entity:Find_wall_clock_1_Done;
+	property:HasState entity:TurnTo_wall_clock_1_Done;
+	property:HasState entity:LookAt_wall_clock_1_Done;
+	property:HasState entity:Grab_fryingpan_1_Done;
+	property:HasState entity:Grab_food_egg_2_Done;
+	property:HasState entity:Find_plate_1_Done;
+	property:HasState entity:PutBack_food_egg_2_To_plate_1_Done;
+	property:HasState entity:InitialState_Cook_some_food_31;
+	property:HasState entity:FinalState_Cook_some_food_31;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsFind_plate_1;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_plate_1;
+	property:HasAction entity:Walk_kitchen_1;
+	property:HasAction entity:Walk_fryingpan_1;
+	property:HasAction entity:Find_fryingpan_1;
+	property:HasAction entity:Grab_fryingpan_1;
+	property:HasAction entity:Find_stove_1;
+	property:HasAction entity:PutBack_fryingpan_1_To_stove_1;
+	property:HasAction entity:Find_stove_1;
+	property:HasAction entity:SwitchOn_stove_1;
+	property:HasAction entity:Find_food_egg_2;
+	property:HasAction entity:Find_food_egg_1;
+	property:HasAction entity:Grab_food_egg_1;
+	property:HasAction entity:Grab_food_egg_2;
+	property:HasAction entity:Break_food_egg_2;
+	property:HasAction entity:PutBack_food_egg_2_To_stove_1;
+	property:HasAction entity:Walk_food_salt_1;
+	property:HasAction entity:Find_food_salt_1;
+	property:HasAction entity:Grab_food_salt_1;
+	property:HasAction entity:Pour_food_salt_1_To_fryingpan_1;
+	property:HasAction entity:Find_wall_clock_1;
+	property:HasAction entity:TurnTo_wall_clock_1;
+	property:HasAction entity:LookAt_wall_clock_1;
+	property:HasAction entity:Grab_fryingpan_1;
+	property:HasAction entity:Grab_food_egg_2;
+	property:HasAction entity:Find_plate_1;
+	property:HasAction entity:PutBack_food_egg_2_To_plate_1;
+	property:SubscribesFor entity:TaskTopic .
+entity:Walk_kitchen_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasAction entity:Walk_kitchen_1 .
+entity:Walk_fryingpan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasAction entity:Walk_fryingpan_1 .
+entity:Find_fryingpan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasAction entity:Find_fryingpan_1 .
+entity:Grab_fryingpan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasAction entity:Grab_fryingpan_1 .
+entity:Find_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasAction entity:Find_stove_1 .
+entity:PutBack_fryingpan_1_To_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasAction entity:PutBack_fryingpan_1_To_stove_1 .
+entity:Find_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasAction entity:Find_stove_1 .
+entity:SwitchOn_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasAction entity:SwitchOn_stove_1 .
+entity:Find_food_egg_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasAction entity:Find_food_egg_2 .
+entity:Find_food_egg_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasAction entity:Find_food_egg_1 .
+entity:Grab_food_egg_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasAction entity:Grab_food_egg_1 .
+entity:Grab_food_egg_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasAction entity:Grab_food_egg_2 .
+entity:Break_food_egg_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasAction entity:Break_food_egg_2 .
+entity:PutBack_food_egg_2_To_stove_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasAction entity:PutBack_food_egg_2_To_stove_1 .
+entity:Walk_food_salt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasAction entity:Walk_food_salt_1 .
+entity:Find_food_salt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasAction entity:Find_food_salt_1 .
+entity:Grab_food_salt_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasAction entity:Grab_food_salt_1 .
+entity:Pour_food_salt_1_To_fryingpan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasAction entity:Pour_food_salt_1_To_fryingpan_1 .
+entity:Find_wall_clock_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasAction entity:Find_wall_clock_1 .
+entity:TurnTo_wall_clock_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasAction entity:TurnTo_wall_clock_1 .
+entity:LookAt_wall_clock_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1 AND IsLookAt_wall_clock_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasAction entity:LookAt_wall_clock_1 .
+entity:Grab_fryingpan_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1 AND IsLookAt_wall_clock_1 == 1 AND IsGrab_fryingpan_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasAction entity:Grab_fryingpan_1 .
+entity:Grab_food_egg_2_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1 AND IsLookAt_wall_clock_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsGrab_food_egg_2 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasAction entity:Grab_food_egg_2 .
+entity:Find_plate_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1 AND IsLookAt_wall_clock_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsFind_plate_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsFind_plate_1;
+	property:HasAction entity:Find_plate_1 .
+entity:PutBack_food_egg_2_To_plate_1_Done a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1 AND IsLookAt_wall_clock_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsFind_plate_1 == 1 AND IsPutBack_food_egg_2_To_plate_1 == 1"^^xsd:string;
+	property:HasReward "1"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsFind_plate_1;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_plate_1;
+	property:HasAction entity:PutBack_food_egg_2_To_plate_1 .
+entity:InitialState_Cook_some_food_31 a concept:State;
+	property:IsGoal "false"^^xsd:boolean;
+	property:IsFinalState "false"^^xsd:boolean;
+	property:IsInitialState "true"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 0 AND IsWalk_fryingpan_1 == 0 AND IsFind_fryingpan_1 == 0 AND IsGrab_fryingpan_1 == 0 AND IsFind_stove_1 == 0 AND IsPutBack_fryingpan_1_To_stove_1 == 0 AND IsFind_stove_1 == 0 AND IsSwitchOn_stove_1 == 0 AND IsFind_food_egg_2 == 0 AND IsFind_food_egg_1 == 0 AND IsGrab_food_egg_1 == 0 AND IsGrab_food_egg_2 == 0 AND IsBreak_food_egg_2 == 0 AND IsPutBack_food_egg_2_To_stove_1 == 0 AND IsWalk_food_salt_1 == 0 AND IsFind_food_salt_1 == 0 AND IsGrab_food_salt_1 == 0 AND IsPour_food_salt_1_To_fryingpan_1 == 0 AND IsFind_wall_clock_1 == 0 AND IsTurnTo_wall_clock_1 == 0 AND IsLookAt_wall_clock_1 == 0 AND IsGrab_fryingpan_1 == 0 AND IsGrab_food_egg_2 == 0 AND IsFind_plate_1 == 0 AND IsPutBack_food_egg_2_To_plate_1 == 0"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsFind_plate_1;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_plate_1;
+	property:HasAction entity:Walk_kitchen_1;
+	property:HasAction entity:Walk_fryingpan_1;
+	property:HasAction entity:Find_fryingpan_1;
+	property:HasAction entity:Grab_fryingpan_1;
+	property:HasAction entity:Find_stove_1;
+	property:HasAction entity:PutBack_fryingpan_1_To_stove_1;
+	property:HasAction entity:Find_stove_1;
+	property:HasAction entity:SwitchOn_stove_1;
+	property:HasAction entity:Find_food_egg_2;
+	property:HasAction entity:Find_food_egg_1;
+	property:HasAction entity:Grab_food_egg_1;
+	property:HasAction entity:Grab_food_egg_2;
+	property:HasAction entity:Break_food_egg_2;
+	property:HasAction entity:PutBack_food_egg_2_To_stove_1;
+	property:HasAction entity:Walk_food_salt_1;
+	property:HasAction entity:Find_food_salt_1;
+	property:HasAction entity:Grab_food_salt_1;
+	property:HasAction entity:Pour_food_salt_1_To_fryingpan_1;
+	property:HasAction entity:Find_wall_clock_1;
+	property:HasAction entity:TurnTo_wall_clock_1;
+	property:HasAction entity:LookAt_wall_clock_1;
+	property:HasAction entity:Grab_fryingpan_1;
+	property:HasAction entity:Grab_food_egg_2;
+	property:HasAction entity:Find_plate_1;
+	property:HasAction entity:PutBack_food_egg_2_To_plate_1 .
+entity:FinalState_Cook_some_food_31 a concept:State;
+	property:IsGoal "true"^^xsd:boolean;
+	property:IsFinalState "true"^^xsd:boolean;
+	property:IsInitialState "false"^^xsd:boolean;
+	property:HasExpression "IsWalk_kitchen_1 == 1 AND IsWalk_fryingpan_1 == 1 AND IsFind_fryingpan_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsFind_stove_1 == 1 AND IsPutBack_fryingpan_1_To_stove_1 == 1 AND IsFind_stove_1 == 1 AND IsSwitchOn_stove_1 == 1 AND IsFind_food_egg_2 == 1 AND IsFind_food_egg_1 == 1 AND IsGrab_food_egg_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsBreak_food_egg_2 == 1 AND IsPutBack_food_egg_2_To_stove_1 == 1 AND IsWalk_food_salt_1 == 1 AND IsFind_food_salt_1 == 1 AND IsGrab_food_salt_1 == 1 AND IsPour_food_salt_1_To_fryingpan_1 == 1 AND IsFind_wall_clock_1 == 1 AND IsTurnTo_wall_clock_1 == 1 AND IsLookAt_wall_clock_1 == 1 AND IsGrab_fryingpan_1 == 1 AND IsGrab_food_egg_2 == 1 AND IsFind_plate_1 == 1 AND IsPutBack_food_egg_2_To_plate_1 == 1"^^xsd:string;
+	property:HasReward "0"^^xsd:double;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsFind_plate_1;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_plate_1;
+	property:HasAction entity:PutBack_food_egg_2_To_plate_1 .
+entity:IsWalk_kitchen_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_fryingpan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_fryingpan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_fryingpan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_fryingpan_1_To_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsSwitchOn_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_food_egg_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_food_egg_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_food_egg_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_food_egg_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsBreak_food_egg_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_food_egg_2_To_stove_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsWalk_food_salt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_food_salt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_food_salt_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPour_food_salt_1_To_fryingpan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_wall_clock_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsTurnTo_wall_clock_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsLookAt_wall_clock_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_fryingpan_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsGrab_food_egg_2 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsFind_plate_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:IsPutBack_food_egg_2_To_plate_1 a concept:ObservationFeature;
+	property:HasRangeStart "0"^^xsd:double;
+	property:HasRangeEnd "1"^^xsd:double;
+	property:HasFeatureType "NOMINAL"^^xsd:string;
+	property:HasUnit ""^^xsd:string .
+entity:TaskTopic a concept:Topic;
+	property:HasName "TaskTopic"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_1;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1;
+	property:HasObservationFeature entity:IsFind_stove_1;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1;
+	property:HasObservationFeature entity:IsFind_food_egg_2;
+	property:HasObservationFeature entity:IsFind_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsBreak_food_egg_2;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1;
+	property:HasObservationFeature entity:IsWalk_food_salt_1;
+	property:HasObservationFeature entity:IsFind_food_salt_1;
+	property:HasObservationFeature entity:IsGrab_food_salt_1;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1;
+	property:HasObservationFeature entity:IsFind_wall_clock_1;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1;
+	property:HasObservationFeature entity:IsGrab_food_egg_2;
+	property:HasObservationFeature entity:IsFind_plate_1;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_plate_1 .
+entity:SetWalk_kitchen_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_kitchen_1 .
+entity:SetWalk_fryingpan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_fryingpan_1 .
+entity:SetFind_fryingpan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_fryingpan_1 .
+entity:SetGrab_fryingpan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_fryingpan_1 .
+entity:SetFind_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_stove_1 .
+entity:SetPutBack_fryingpan_1_To_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_fryingpan_1_To_stove_1 .
+entity:SetSwitchOn_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsSwitchOn_stove_1 .
+entity:SetFind_food_egg_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_food_egg_2 .
+entity:SetFind_food_egg_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_food_egg_1 .
+entity:SetGrab_food_egg_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_food_egg_1 .
+entity:SetGrab_food_egg_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_food_egg_2 .
+entity:SetBreak_food_egg_2 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsBreak_food_egg_2 .
+entity:SetPutBack_food_egg_2_To_stove_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_stove_1 .
+entity:SetWalk_food_salt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsWalk_food_salt_1 .
+entity:SetFind_food_salt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_food_salt_1 .
+entity:SetGrab_food_salt_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsGrab_food_salt_1 .
+entity:SetPour_food_salt_1_To_fryingpan_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPour_food_salt_1_To_fryingpan_1 .
+entity:SetFind_wall_clock_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_wall_clock_1 .
+entity:SetTurnTo_wall_clock_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsTurnTo_wall_clock_1 .
+entity:SetLookAt_wall_clock_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsLookAt_wall_clock_1 .
+entity:SetFind_plate_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsFind_plate_1 .
+entity:SetPutBack_food_egg_2_To_plate_1 a concept:Effect;
+	property:HasImpactType "ON"^^xsd:string;
+	property:HasObservationFeature entity:IsPutBack_food_egg_2_To_plate_1 .
+entity:Walk_kitchen_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_kitchen_1 .
+entity:Walk_fryingpan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_fryingpan_1 .
+entity:Find_fryingpan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_fryingpan_1 .
+entity:Grab_fryingpan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_fryingpan_1 .
+entity:Find_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_stove_1 .
+entity:PutBack_fryingpan_1_To_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_fryingpan_1_To_stove_1 .
+entity:Find_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_stove_1 .
+entity:SwitchOn_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetSwitchOn_stove_1 .
+entity:Find_food_egg_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_food_egg_2 .
+entity:Find_food_egg_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_food_egg_1 .
+entity:Grab_food_egg_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_food_egg_1 .
+entity:Grab_food_egg_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_food_egg_2 .
+entity:Break_food_egg_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetBreak_food_egg_2 .
+entity:PutBack_food_egg_2_To_stove_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_food_egg_2_To_stove_1 .
+entity:Walk_food_salt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetWalk_food_salt_1 .
+entity:Find_food_salt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_food_salt_1 .
+entity:Grab_food_salt_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_food_salt_1 .
+entity:Pour_food_salt_1_To_fryingpan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPour_food_salt_1_To_fryingpan_1 .
+entity:Find_wall_clock_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_wall_clock_1 .
+entity:TurnTo_wall_clock_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetTurnTo_wall_clock_1 .
+entity:LookAt_wall_clock_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetLookAt_wall_clock_1 .
+entity:Grab_fryingpan_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_fryingpan_1 .
+entity:Grab_food_egg_2 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetGrab_food_egg_2 .
+entity:Find_plate_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetFind_plate_1 .
+entity:PutBack_food_egg_2_To_plate_1 a concept:Action;
+	property:HasText ""^^xsd:string;
+	property:HasEffect entity:SetPutBack_food_egg_2_To_plate_1 .

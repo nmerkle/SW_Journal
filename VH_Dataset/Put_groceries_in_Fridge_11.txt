@@ -1,0 +1,26 @@
+Put groceries in Fridge
+Walk to kitchen, find groceries in cabinet and move them to fridge and close fridge.
+
+
+[Walk] <kitchen> (1)
+[Walk] <kitchen_cabinet> (1)
+[Find] <kitchen_cabinet> (1)
+[Find] <food_vegetable> (1)
+[Grab] <food_vegetable> (1)
+[Find] <fridge> (1)
+[Open] <fridge> (1)
+[PutIn] <food_vegetable> (1) <fridge> (1)
+[Find] <food_carrot> (1)
+[Grab] <food_carrot> (1)
+[PutIn] <food_carrot> (1) <fridge> (1)
+[Find] <food_cereal> (1)
+[Grab] <food_cereal> (1)
+[PutIn] <food_cereal> (1) <fridge> (1)
+[Find] <food_oatmeal> (1)
+[Grab] <food_oatmeal> (1)
+[PutIn] <food_oatmeal> (1) <fridge> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <fridge> (1)
+[Find] <fridge> (1)
+[Close] <fridge> (1)
