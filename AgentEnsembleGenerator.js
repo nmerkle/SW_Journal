@@ -189,7 +189,7 @@ function createTaskDescriptions(originTask, taskIndexes, dataset) {
         }
         const topic1ID = `TaskTopic`
         const topic1 = {id: topic1ID, features: []}
-        //let i = 0
+        let i = 0
         t[1][0].forEach((act) => {
             const stateId = `${act}_Done`
             const featId = `Is${act}`
@@ -199,9 +199,9 @@ function createTaskDescriptions(originTask, taskIndexes, dataset) {
             let g = false
             let rew = 0
             let exp = ``
-           /* let prevState = undefined
-            if(i > 0 && i < t[1][0].length)
-                prevState = t[1][0][i-1]+"Done"
+            let prevState = undefined
+            if(i > 0 && i < t[2][0].length)
+                prevState = t[2][0][i-1]
             else if(i === 0)
                 prevState = initState.id
             else
@@ -213,7 +213,7 @@ function createTaskDescriptions(originTask, taskIndexes, dataset) {
                 probability: 1.0,
                 nextState: stateId
             }
-            i += 1 */
+            i += 1
             const state = {
                 id: stateId,
                 expression: ``,
@@ -249,7 +249,7 @@ function createTaskDescriptions(originTask, taskIndexes, dataset) {
             state.reward = rew
             initState1.actions.push(actionId)
             initState1.features.push(featId)
-            const action = {id: `${actionId}`, effects: [effectId], /*transitions: [transition],*/ negation: false, text: ""}
+            const action = {id: `${actionId}`, effects: [effectId], transitions: [transition], negation: false, text: ""}
             const feat = {id: featId, rangeStart: 0, rangeEnd: 1, type: 'NOMINAL', unit: ""}
             const effect = {id: effectId, impactType: "ON", features: [featId]}
             topic1.features.push(feat.id)
@@ -330,7 +330,7 @@ function semantifyAndStoreTask(task) {
         turtle += `\tproperty:SubscribesFor entity:${topic.id};\n`
     })
     turtle = turtle.substring(0, turtle.lastIndexOf(";"))
-    turtle += ` .\n`
+    turtle += `.\n`
     task.states.forEach((state) => {
         let id = undefined
         if(state.id.includes("-") || state.id.includes("+") || state.id.includes("/") || state.id.includes("*")) {
@@ -375,7 +375,7 @@ function semantifyAndStoreTask(task) {
             turtle += `\tproperty:HasAction entity:${act};\n`
         })
         turtle = turtle.substring(0, turtle.lastIndexOf(";"))
-        turtle += ` .\n`
+        turtle += `.\n`
         jsonld.push(st)
         taskEntity[prop+'HasState'].push({'@id': st["@id"]})
     })
@@ -427,7 +427,7 @@ function semantifyAndStoreTask(task) {
             turtle += `\tproperty:HasObservationFeature entity:${fId};\n`
         })
         turtle = turtle.substring(0, turtle.lastIndexOf(";"))
-        turtle += ` .\n`
+        turtle += `.\n`
         jsonld.push(top)
         taskEntity[prop+'SubscribesFor'].push({'@id': top["@id"]})
     })
@@ -456,48 +456,52 @@ function semantifyAndStoreTask(task) {
 
         })
         turtle = turtle.substring(0, turtle.lastIndexOf(";"))
-        turtle += ` .\n`
+        turtle += `.\n`
         jsonld.push(ef)
     }
 
     task.actions.forEach((action) => {
-       /* const transId = action.transition.id
-        const nextState = action.transition.nextState
-        const previouseState = action.transition.previousState
-        const prob = action.transition.probability
-        let trans = {
-            '@id': entity+transId,
-            '@type': [concept+'Transition'],
-            [prop+'HasPreviousState']: [{'@id': `${previouseState}`}],
-            [prop+'HasNextState']: [{'@id': `${nextState}`}],
-            [prop+'HasAction']: [{'@id': `${action.transition.action}`}],
-            [prop+'HasTransitionProbability']: [
-                {
-                '@type': `${xmlSchema}double`,
-                '@value': prob
-                }
-            ]
-        }
-        turtle += `entity:${transId} a concept:Transition;\n`
-        turtle += `\tproperty:HasPreviousState entity:${previouseState};\n`
-        turtle += `\tproperty:HasNextState entity:${nextState};\n`
-        turtle += `\tproperty:HasAction entity:${action.transition.action};\n`
-        turtle += `\tproperty:HasTransitionProbability "${prob}"^^xsd:double.\n`
+        for(let k = 0; k < action.transitions.length; k++) {
+            const transId = action.transitions[k].id
+            const nextState = action.transitions[k].nextState
+            const previouseState = action.transitions[k].previousState
+            const prob = action.transitions[k].probability
+            let trans = {
+                '@id': entity + transId,
+                '@type': [concept + 'Transition'],
+                [prop + 'HasPreviousState']: [{'@id': `${previouseState}`}],
+                [prop + 'HasNextState']: [{'@id': `${nextState}`}],
+                [prop + 'HasAction']: [{'@id': `${action.transitions[k].action}`}],
+                [prop + 'HasTransitionProbability']: [
+                    {
+                        '@type': `${xmlSchema}double`,
+                        '@value': prob
+                    }
+                ]
+            }
+            turtle += `entity:${transId} a concept:Transition;\n`
+            turtle += `\tproperty:HasPreviousState entity:${previouseState};\n`
+            turtle += `\tproperty:HasNextState entity:${nextState};\n`
+            turtle += `\tproperty:HasAction entity:${action.transitions[k].action};\n`
+            turtle += `\tproperty:HasTransitionProbability "${prob}"^^xsd:double.\n`
 
-        jsonld.push(trans) */
+            jsonld.push(trans)
+        }
         let act = {
             '@id': entity+action.id,
             '@type': [concept+'Action'],
-            [prop+'HasText']: [{'@value': action.text}],
+            //[prop+'HasText']: [{'@value': action.text}],
             //[prop+'IsNegation']: [{'@type': xmlSchema+'boolean', '@value': action.negation}],
-            [prop+'HasEffect']: []
-           // [prop+ 'HasTransition']: [],
+            [prop+'HasEffect']: [],
+            [prop+ 'HasTransition']: []
         }
-       // act[prop+'HasTransition'].push(`{'@id': ${entity}${transId}}`)
         turtle += `entity:${action.id} a concept:Action;\n`
-        turtle += `\tproperty:HasText "${action.text}"^^xsd:string;\n`
-       // turtle += `\tproperty:HasTransition entity:${transId};\n`
+        //turtle += `\tproperty:HasText "${action.text}"^^xsd:string;\n`
         //turtle += `\tproperty:IsNegation "${action.negation}"^^xsd:boolean;\n`
+        for(let m = 0; m < action.transitions.length; m++) {
+            act[prop + 'HasTransition'].push(`{'@id': ${entity}${action.transitions[m].id}}`)
+            turtle += `\tproperty:HasTransition entity:${action.transitions[m].id};\n`
+        }
         action.effects.forEach((effect) => {
             let ef = {
                 '@id': entity+effect
@@ -506,7 +510,7 @@ function semantifyAndStoreTask(task) {
             turtle += `\tproperty:HasEffect entity:${effect};\n`
         })
         turtle = turtle.substring(0, turtle.lastIndexOf(";"))
-        turtle += ` .\n`
+        turtle += `.\n`
         jsonld.push(act)
         taskEntity[prop+'HasAction'].push({'@id': act["@id"]})
     })
