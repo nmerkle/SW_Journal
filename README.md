@@ -2,9 +2,9 @@
 Here you can find the source code and generated datasets regarding the domestic activities that were generated in the scope of the submitted Semantic Web Journal paper. The generated data is based on the **[Virtual Home](https://github.com/xavierpuigf/virtualhome)** dataset, which is published under the MIT license.
 
 ### Directory Structure
-* code -- Contains the source code
-* Entity_Embeddings -- contains the trained entity embeddings
-* VirtualHomeKG.zip -- contains the generated semantic task descriptions of all activities given in the Virtual Home dataset.
+* **code** -- Contains the source code
+* **Entity_Embeddings** -- contains the trained entity embeddings
+* **VirtualHomeKG.zip** -- contains the generated semantic task descriptions of all activities given in the Virtual Home dataset.
 
 ### Preparations
 The demo was tested on a Windows OS.
