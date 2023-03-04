@@ -39,6 +39,8 @@ npm start
 node ./EmbeddingTrainer.js
 ```
 
+It is not required, i.e. optional, to train the entity embeddings from new because they are already available in the [Entity_Embeddings](Entity_Embeddings) directory.
+
 __Obtained Results:__
  
 Two files (AgentEnsembleEval.csv and ComposedPolicies.json) will be generated that contain the evaluation results, such as task name, required steps, number of episodes, cumulative reward, wrong decisions and the policies that were composed for each evaluated task. Furthermore, a directory named **../VirtualHomeKG** will be generated that contains two directories (**JSONLD** and **TURTLE**). In both directories the semantic task representations for the simulation function are stored in JSONLD and Turtle format.
