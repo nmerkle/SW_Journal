@@ -17,7 +17,7 @@ The demo was tested on a Windows OS.
 __Configuration of the Demo (optional):__
 
 It is not required to change the configuration of the demo. However, you have the possibility to specify the number of tasks that shall be evaluated as well as the radius hyper-parameter of the executed algorithm. The **[.env](code/.env)** configuration file contains all configurable parameters as key-value pairs. The following parameters can be defined:
-* NUMBER_TASKS -- The number of tasks that shall be evaluated. Default value is set to 10
+* NUMBER_TASKS -- The number of tasks that shall be evaluated. Default value is set to 52 as performed in the evaluation of the presented approach. 
 * RADIUS -- The search radius for finding nearby embedding vectors. Default value is set to 0.25
 
 ---
