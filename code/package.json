@@ -46,7 +46,7 @@
     "inquirer": "^6.2.0",
     "js-sha1": "^0.6.0",
     "js-simulator": "^1.0.17",
-    "mathjs": ">=7.5.1",
+    "mathjs": ">=15.2.0",
     "ml-pca": "^4.0.1",
     "mongodb": "^3.6.12",
     "mosca": "^2.8.3",
